@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-class Header extends Component {
+class QuizMain extends Component {
   state = {};
   render() {
     return;
   }
 }
 
-export default Header;
+export default QuizMain;
