@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import QuizMain from "./components/QuizMain";
 
@@ -8,14 +8,16 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="header-container">
-          <Header />
-        </div>
-        <div className="quiz-main">
-          <QuizMain />
-        </div>
-        <div className="navbar-container">
-          <Navbar />
+        <div className="main-container">
+          <div className="header-container">
+            <Header />
+          </div>
+          <div className="quiz-main">
+            <QuizMain />
+          </div>
+          <div>
+            <Navbar />
+          </div>
         </div>
       </React.Fragment>
     );

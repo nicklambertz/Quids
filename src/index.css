@@ -1,8 +1,41 @@
+.main-container {
+  padding: 32px;
+}
+
 .header-container {
 }
 
 .quiz-mian {
 }
 
-.navbar-container {
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent; /* Hintergrundfarbe transparent setzen */
+}
+
+.nav-button {
+  background-color: green;
+  border: none;
+  height: 80px;
+  width: 70px;
+  border-radius: 20px; /* Ecken abrunden */
+  padding: 10px; /* Platz um das Bild herum */
+}
+
+.nav-button.active {
+  background-color: grey; /* Aktives Feld grau färben */
+}
+
+.nav-button:hover {
+  transform: scale(1.1); /* Bei Hover vergrößern */
+}
+
+.nav-button img {
+  width: 50px; /* Bildgröße anpassen */
+  height: 50px;
 }
