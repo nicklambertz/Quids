@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="main-container">
+        <div className="container">
           <div className="header-container">
             <Header />
           </div>
