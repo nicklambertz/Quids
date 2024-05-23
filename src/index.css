@@ -5,7 +5,31 @@
 .header-container {
 }
 
-.quiz-mian {
+.quiz-main {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  transition: transform 0.2s;
+  max-width: 200px;
+  margin: 16px;
+}
+
+.quiz-main:hover {
+  transform: scale(1.05);
+}
+
+.quiz-main-image{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.quiz-main-title{
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .navbar {
