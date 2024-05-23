@@ -63,13 +63,12 @@ body {
   height: 50px;
 }
 
-.title-Quizapp
-{
+.title-Quizapp {
   font-size: 30px;
   font-weight: bold;
   color: green;
 }
-.top-header{
+.top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,4 +76,76 @@ body {
   background-color: #f1f1f1;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.score-container {
+  background-color: green;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  display: inline-block; /* Verhindert, dass das Element 100% der Breite einnimmt */
+}
+
+.score-text {
+  font-size: 20px;
+}
+
+.score-value {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.progressbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.progressbar {
+  position: relative;
+  width: 300px;
+  background-color: yellow;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.progressbar__fill {
+  height: 100%;
+  background-color: green;
+  border-radius: 15px 0 0 15px;
+  transition: width 0.3s ease;
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  font-size: 20px;
+  opacity: 1;
+  transition: font-size 0.3s ease; /* Übergangseffekte für die Größe der Sterne hinzufügen */
+}
+
+.invisible {
+  opacity: 0; /* Die unsichtbaren Sterne ausblenden */
+}
+
+.progress-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.progress-button:hover {
+  background-color: #45a049;
 }
