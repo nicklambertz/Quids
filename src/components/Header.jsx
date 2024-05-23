@@ -3,8 +3,6 @@ import Modal from "./Modal"; // Import the Modal component
 
 class Header extends Component {
   state = {
-    showModal: false, // Add a state to control the visibility of the modal
-    selectedPicture: "assets/img/avatar1.jpg", // Add a state to store the selected picture
   };
 
   render() {
@@ -12,7 +10,6 @@ class Header extends Component {
       <div className="top-header">
         <div className="profile">
           <img
-            src={this.state.selectedPicture} // Use the selected picture from state
             alt="Profile Picture"
             onClick={this.handleProfile}
             height={64}
@@ -31,34 +28,14 @@ class Header extends Component {
             width={50}
           />
         </div>
-
-        {/* Render the modal component */}
-        {this.state.showModal && (
-          <Modal
-            onClose={this.handleModalClose}
-            onSelectPicture={this.handlePictureSelect}
-          />
-        )}
       </div>
     );
+handleSettings = () => {
+
+}
+handleProfile = () => {
+  
   }
-
-  handleProfile = () => {
-    this.setState({ showModal: true }); // Show the modal when profile picture is clicked
-  };
-
-  handleSettings = () => {
-    // Code to handle settings button click
-  };
-
-  handleModalClose = () => {
-    this.setState({ showModal: false }); // Close the modal
-  };
-
-  handlePictureSelect = (picture) => {
-    this.setState({ selectedPicture: picture }); // Update the selected picture in state
-    this.setState({ showModal: false }); // Close the modal after picture selection
-  };
 }
 
 export default Header;
