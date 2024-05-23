@@ -34,8 +34,9 @@ handleSettings = () => {
 
 }
 handleProfile = () => {
-  
-  }
-}
 
+  }
+  };
+};
 export default Header;
+  
