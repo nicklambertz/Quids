@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Modal from "./Modal"; // Import the Modal component
 
 class Header extends Component {
   state = {
