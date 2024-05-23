@@ -1,5 +1,27 @@
-.main-container {
-  padding: 32px;
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Verhindert Scrollen */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .header-container {
@@ -23,6 +45,7 @@
   border: none;
   height: 80px;
   width: 70px;
+  margin: 40px;
   border-radius: 20px; /* Ecken abrunden */
   padding: 10px; /* Platz um das Bild herum */
 }
