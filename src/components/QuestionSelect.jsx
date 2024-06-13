@@ -27,10 +27,14 @@ const QuestionSelect = ({ question, answers, audioSrc }) => {
           <div
             key={index}
             className={`answer ${selectedAnswer === index ? "selected" : ""}`}
-            style={{ backgroundColor: answer.color }}
             onClick={() => handleAnswerClick(index)}
           >
-            {answer.text}
+            <img
+              src={answer.imgSrc}
+              alt={answer.text}
+              className="answer-image"
+            />
+            <span className="answer-text">{answer.text}</span>
           </div>
         ))}
       </div>

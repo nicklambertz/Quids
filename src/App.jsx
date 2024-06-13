@@ -10,10 +10,10 @@ import QuestionSelect from "./components/QuestionSelect";
 const App = () => {
   const question = "Welcher Vogel legt seine Eier in fremde Nester?";
   const answers = [
-    { text: "Kuckuck", color: "red" },
-    { text: "Amsel", color: "blue" },
-    { text: "Buntspecht", color: "purple" },
-    { text: "Taube", color: "orange" },
+    { imgSrc: "assets/img/numbers.png", text: "Kuckuck" },
+    { imgSrc: "assets/img/settings.png", text: "Amsel" },
+    { imgSrc: "assets/img/trash.png", text: "Buntspecht" },
+    { imgSrc: "assets/img/volumen.png", text: "Taube" },
   ];
   const audioSrc = "/assets/audio/question-example.mp3";
 
