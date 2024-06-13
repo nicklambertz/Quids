@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import QuizMain from "./components/QuizMain";
