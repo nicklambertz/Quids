@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  overflow: hidden; /* Verhindert Scrollen */
+  /*overflow: hidden; /* Verhindert Scrollen */
 }
 
 body {
@@ -125,14 +125,41 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 5px;
-  font-size: 20px;
+  font-size: 35px;
+  opacity: 0;
+  transition: opacity 0.3s ease, font-size 0.3s ease;
+}
+
+.star1 {
+  left: 25%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Stern wird mittig vom Fortschritt zentriert */
+}
+
+.star2 {
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Stern wird mittig vom Fortschritt zentriert */
+}
+
+.star3 {
+  left: 75%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Stern wird mittig vom Fortschritt zentriert */
+}
+
+.visible {
   opacity: 1;
-  transition: font-size 0.3s ease; /* Übergangseffekte für die Größe der Sterne hinzufügen */
 }
 
 .invisible {
-  opacity: 0; /* Die unsichtbaren Sterne ausblenden */
+  opacity: 0;
 }
 
 .progress-button {
@@ -140,12 +167,93 @@ body {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
-  background-color: #4caf50;
+  border-radius: 15px;
+  background-color: green;
   color: white;
   transition: background-color 0.3s ease;
 }
 
 .progress-button:hover {
-  background-color: #45a049;
+  background-color: green;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.audio-container {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.speaker-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.answers {
+  color: white;
+  font-size: 18px;
+  width: 500px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  margin: 10px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.answer {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin: 20px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.answer:hover {
+  transform: scale(1.05);
+}
+
+.answer.selected {
+  transform: scale(1.1);
+}
+
+.skip-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px; /* Feste Breite für den Button */
+  height: 50px; /* Feste Höhe für den Button */
+  border: none;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 10px; /* Abgerundete Ecken für den Button */
+  outline: none; /* Entfernt den blauen Umriss bei Klick */
+}
+
+.skip-icon {
+  width: 30px;
+  height: 30px;
+  transform: rotate(270deg);
+}
+
+.skip-button:hover {
+  transform: scale(1.1);
 }

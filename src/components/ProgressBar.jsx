@@ -4,17 +4,7 @@ const ProgressBar = () => {
   const [progress, setProgress] = useState(0);
 
   const increaseProgress = () => {
-    setProgress((prev) => (prev < 100 ? prev + 10 : 100));
-  };
-
-  const getStars = () => {
-    if (progress >= 30 && progress < 60) {
-      return <div className="star">⭐</div>;
-    } else if (progress >= 60) {
-      return <div className="star">⭐⭐</div>;
-    } else {
-      return <div className="star invisible">⭐</div>;
-    }
+    setProgress((prev) => (prev < 100 ? prev + 25 : 100));
   };
 
   return (
@@ -24,7 +14,21 @@ const ProgressBar = () => {
           className="progressbar__fill"
           style={{ width: `${progress}%`, minWidth: "30px" }}
         ></div>
-        {getStars()}
+        <div
+          className={`star star1 ${progress >= 25 ? "visible" : "invisible"}`}
+        >
+          ⭐
+        </div>
+        <div
+          className={`star star2 ${progress >= 50 ? "visible" : "invisible"}`}
+        >
+          ⭐
+        </div>
+        <div
+          className={`star star3 ${progress >= 75 ? "visible" : "invisible"}`}
+        >
+          ⭐
+        </div>
       </div>
       <button onClick={increaseProgress} className="progress-button">
         Fortschritt erhöhen
