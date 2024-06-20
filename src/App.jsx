@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import QuizMain from "./components/QuizMain";
-import PointScore from "./components/PointScore";
-import ProgressBar from "./components/ProgressBar";
-import QuestionSelect from "./components/QuestionSelect";
+import { Route, Routes } from "react-router-dom";
+import QuizMain from "./components/Home";
+import PointOverview from "./components/Points/PointOverview";
+import QuizTraffic from "./components/Quiz/QuizTraffic";
+import QuizFood from "./components/Quiz/QuizFood";
+import QuizTrash from "./components/Quiz/QuizTrash";
+import Home from "./components/Home";
 
 const App = () => {
   const question = "Welcher Vogel legt seine Eier in fremde Nester?";
@@ -18,32 +18,15 @@ const App = () => {
   const audioSrc = "/assets/audio/question-example.mp3";
 
   return (
-    <React.Fragment>
-      <div className="container">
-        <div className="header-container">
-          <Header />
-        </div>
-        <div className="quiz-main">
-          <QuizMain />
-        </div>
-        <div>
-          <Navbar />
-        </div>
-        <div>
-          <PointScore />
-        </div>
-        <div>
-          <ProgressBar />
-        </div>
-        <div>
-          <QuestionSelect
-            question={question}
-            answers={answers}
-            audioSrc={audioSrc}
-          />
-        </div>
-      </div>
-    </React.Fragment>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="verkehr" element={<QuizTraffic />} />
+        <Route path="nahrung" element={<QuizFood />} />
+        <Route path="müll" element={<QuizTrash />} />
+        <Route path="punkte" element={<PointOverview />} />
+      </Routes>
+    </>
   );
 };
 
