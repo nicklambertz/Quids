@@ -1,25 +1,23 @@
 import React, { useState } from "react";
 import QuestionSelect from "./QuestionSelect";
+import QuestionClickPoints from "./QuestionClickPoint";
 
-const PointOverview = () => {
-  const question = "Welcher Vogel legt seine Eier in fremde Nester?";
-  const answers = [
-    { imgSrc: "assets/img/avatar1.jpg", text: "Kuckuck" },
-    { imgSrc: "assets/img/settings.png", text: "Amsel" },
-    { imgSrc: "assets/img/trash.png", text: "Buntspecht" },
-    { imgSrc: "assets/img/volumen.png", text: "Taube" },
-  ];
-  const audioSrc = "/assets/audio/question-example.mp3";
+const QuizFood = () => {
+  const question = "Wo ist der linke obere Zahn von dem Monster?";
+  const image = "./assets/img/avatar1.jpg";
+  const correctArea = { x: 140, y: 130, width: 30, height: 20 };
+  const audioSrc = "./assets/audio/question-example.mp3";
   return (
     <>
       <h1>Food</h1>
-      <QuestionSelect
+      <QuestionClickPoints
         question={question}
-        answers={answers}
+        image={image}
+        correctArea={correctArea}
         audioSrc={audioSrc}
       />
     </>
   );
 };
 
-export default PointOverview;
+export default QuizFood;
