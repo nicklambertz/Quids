@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import QuestionSelect from "./QuestionSelect";
 
-const PointOverview = () => {
+const QuizTrash = () => {
   const question = "Welcher Vogel legt seine Eier in fremde Nester?";
   const answers = [
     { imgSrc: "assets/img/avatar1.jpg", text: "Kuckuck" },
@@ -22,4 +22,4 @@ const PointOverview = () => {
   );
 };
 
-export default PointOverview;
+export default QuizTrash;
