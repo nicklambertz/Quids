@@ -24,59 +24,12 @@ body {
   height: 100%;
 }
 
-.header-container {
-}
-
-.quiz-mian {
-}
-
-.navbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: transparent; /* Hintergrundfarbe transparent setzen */
-}
-
-.nav-button {
-  background-color: green;
-  border: none;
-  height: 80px;
-  width: 70px;
-  margin: 40px;
-  border-radius: 20px; /* Ecken abrunden */
-  padding: 10px; /* Platz um das Bild herum */
-}
-
-.nav-button.active {
-  background-color: grey; /* Aktives Feld grau färben */
-}
-
-.nav-button:hover {
-  transform: scale(1.1); /* Bei Hover vergrößern */
-}
-
-.nav-button img {
-  width: 50px; /* Bildgröße anpassen */
-  height: 50px;
-}
-
 .title-Quizapp {
   font-size: 30px;
   font-weight: bold;
   color: green;
 }
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
+
 
 .score-container {
   background-color: green;
