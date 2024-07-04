@@ -3,7 +3,7 @@ import styles from "./header.module.css"
 const Header = () => {
   return <div className={styles["header"]}>
         <div className={styles["header__name"]}>
-          <img src="./assets/img/zoo.jpg"/>
+          <img src="./assets/img/lion.png"/>
           <span>{window.localStorage.getItem("name")} </span>
           <span>{window.localStorage.getItem("score") ?? 0}</span>
         </div>
