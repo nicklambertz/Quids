@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import QuestionSelect from "./QuestionSelect";
+import QuestionTimeClick from "./QuestionTimeClick";
 
 const QuizTrash = () => {
-  const question = "Welcher Vogel legt seine Eier in fremde Nester?";
-  const answers = [
-    { imgSrc: "assets/img/avatar1.jpg", text: "Kuckuck" },
-    { imgSrc: "assets/img/settings.png", text: "Amsel" },
-    { imgSrc: "assets/img/trash.png", text: "Buntspecht" },
-    { imgSrc: "assets/img/volumen.png", text: "Taube" },
+  const question = "Klicke auf die Ampel, wenn du über die Straße gehen darfst";
+  const images = [
+    "./assets/img/traffic-light-red.png",
+    "./assets/img/traffic-light-yellow.png",
+    "./assets/img/traffic-light-green.png",
   ];
+  const interval = 1500;
+  const correctImageIndex = 2; //Index beginnt bei 0
   const audioSrc = "/assets/audio/question-example.mp3";
+  const tip = "Du darfst gehen, wenn die Ampel grün ist";
   return (
     <>
       <h1>Trash</h1>
-      <QuestionSelect
+      <QuestionTimeClick
         question={question}
-        answers={answers}
+        images={images}
+        interval={interval}
+        correctImageIndex={correctImageIndex}
         audioSrc={audioSrc}
+        tip={tip}
       />
     </>
   );

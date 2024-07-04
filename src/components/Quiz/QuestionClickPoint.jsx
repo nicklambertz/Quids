@@ -1,8 +1,17 @@
 import React, { useState } from "react";
+import Banner from "./Banner";
 
-const QuestionClickPoints = ({ question, image, correctArea, audioSrc }) => {
+const QuestionClickPoints = ({
+  question,
+  image,
+  correctArea,
+  audioSrc,
+  tip,
+}) => {
   const [clickPosition, setClickPosition] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
+  const [showBanner, setShowBanner] = useState(false);
+  const [bannerMessage, setBannerMessage] = useState("");
 
   const handleImageClick = (e) => {
     const rect = e.target.getBoundingClientRect();
@@ -17,11 +26,21 @@ const QuestionClickPoints = ({ question, image, correctArea, audioSrc }) => {
 
     setClickPosition({ x, y });
     setIsCorrect(isWithinCorrectArea);
+
+    if (isWithinCorrectArea) {
+      setBannerMessage("Richtig! Gut gemacht!");
+    } else {
+      setBannerMessage("Oh nein, das war leider falsch.\nTipp: " + tip);
+    }
+
+    setShowBanner(true);
+    setTimeout(() => setShowBanner(false), 5000); // Banner nach 5 Sekunden ausblenden
   };
 
   const resetClick = () => {
     setClickPosition(null);
     setIsCorrect(null);
+    setShowBanner(false);
   };
 
   const playAudio = () => {
@@ -73,6 +92,7 @@ const QuestionClickPoints = ({ question, image, correctArea, audioSrc }) => {
           />
         </button>
       )}
+      {showBanner && <Banner message={bannerMessage} isCorrect={isCorrect} />}
     </div>
   );
 };

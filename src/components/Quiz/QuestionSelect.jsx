@@ -1,10 +1,34 @@
 import React, { useState } from "react";
+import Banner from "./Banner";
 
-const QuestionSelect = ({ question, answers, audioSrc }) => {
+const QuestionSelect = ({
+  question,
+  answers,
+  correctAnswerIndex,
+  audioSrc,
+  tip,
+}) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
+  const [bannerMessage, setBannerMessage] = useState("");
 
   const handleAnswerClick = (index) => {
     setSelectedAnswer(index);
+    const isAnswerCorrect = index === correctAnswerIndex;
+    handleAnswer(isAnswerCorrect);
+  };
+
+  const handleAnswer = (isAnswerCorrect) => {
+    if (isAnswerCorrect) {
+      setBannerMessage("Richtig! Gut gemacht!");
+      setIsCorrect(true);
+    } else {
+      setBannerMessage("Oh nein, das war leider falsch. \nTipp: " + tip);
+      setIsCorrect(false);
+    }
+    setShowBanner(true);
+    setTimeout(() => setShowBanner(false), 5000); // Banner nach 5 Sekunden ausblenden
   };
 
   const playAudio = () => {
@@ -45,6 +69,7 @@ const QuestionSelect = ({ question, answers, audioSrc }) => {
           className="skip-icon"
         />
       </button>
+      {showBanner && <Banner message={bannerMessage} isCorrect={isCorrect} />}
     </div>
   );
 };
