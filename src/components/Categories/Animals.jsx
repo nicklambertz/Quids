@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./Header/Header";
-import Navbar from "./Navbar/Navbar";
-import Categories from "./Categories/Categories";
+import Header from "../Header/Header";
+import Navbar from "../Navbar/Navbar";
+import Categories from "./Categories";
 
-const Home = () => {
+const Animals = () => {
   return (
     <>
       <link
@@ -16,7 +16,7 @@ const Home = () => {
         <Header />
         <Categories
           categories={[
-            { link: "", label: "Tiere", icon: "lion.png" },
+            { link: "", label: "Tiere", icon: "zoo.jpg" },
             { link: "", label: "Afrika", icon: "lion.png" },
             { link: "", label: "Asien", icon: "lion.png" },
             { link: "", label: "Europa", icon: "lion.png" },
@@ -32,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Animals;

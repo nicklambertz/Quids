@@ -1,43 +1,56 @@
 .header {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.header__name, .header__reset {
-    background: gray;
-    width: fit-content;
-    border-radius: 50rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    overflow: hidden;
+.header__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__name,
+.header__reset {
+  background: gray;
+  width: fit-content;
+  border-radius: 50rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  overflow: hidden;
 }
 
 .header__name > img {
-    object-fit: cover;
-    height: 100%;
-    border-radius: 50rem;
-    max-height: 4rem;
-    aspect-ratio: 1/1;
-    padding: 5px;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 50rem;
+  max-height: 4rem;
+  aspect-ratio: 1/1;
+  padding: 5px;
 }
 
 .header__name > span:first-of-type {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .header__name > span:last-of-type {
-    font-size: 2rem;
-    margin-right: 1rem;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 .header__reset {
-    padding: 1rem;
-    font-size: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
 }
 .logo {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
