@@ -1,38 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const ProgressBar = () => {
   const [progress, setProgress] = useState(0);
+  const [stars, setStars] = useState(0);
 
-  const increaseProgress = () => {
-    setProgress((prev) => (prev < 100 ? prev + 25 : 100));
-  };
+  useEffect(() => {
+    const storedScore = parseInt(window.localStorage.getItem("score")) || 0;
+    setProgress(storedScore);
+  }, []);
+
+  const progressWidth = progress >= 400 ? 100 : ((progress % 400) * 100) / 400;
 
   return (
     <div className="progressbar-container">
       <div className="progressbar">
         <div
           className="progressbar__fill"
-          style={{ width: `${progress}%`, minWidth: "30px" }}
+          style={{ width: `${progressWidth}%`, minWidth: "10px" }}
         ></div>
         <div
-          className={`star star1 ${progress >= 25 ? "visible" : "invisible"}`}
+          className={`star star1 ${progress >= 100 ? "visible" : "invisible"}`}
         >
           ⭐
         </div>
         <div
-          className={`star star2 ${progress >= 50 ? "visible" : "invisible"}`}
+          className={`star star2 ${progress >= 200 ? "visible" : "invisible"}`}
         >
           ⭐
         </div>
         <div
-          className={`star star3 ${progress >= 75 ? "visible" : "invisible"}`}
+          className={`star star3 ${progress >= 300 ? "visible" : "invisible"}`}
+        >
+          ⭐
+        </div>
+        <div
+          className={`star star4 ${progress >= 400 ? "visible" : "invisible"}`}
         >
           ⭐
         </div>
       </div>
-      <button onClick={increaseProgress} className="progress-button">
-        Fortschritt erhöhen
-      </button>
     </div>
   );
 };
