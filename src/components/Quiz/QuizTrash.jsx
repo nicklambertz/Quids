@@ -12,9 +12,9 @@ const QuizTrash = () => {
   const correctImageIndex = 2; //Index beginnt bei 0
   const audioSrc = "/assets/audio/question-example.mp3";
   const tip = "Du darfst gehen, wenn die Ampel grün ist";
+  const skipLink = "/muell";
   return (
     <>
-      <h1>Trash</h1>
       <QuestionTimeClick
         question={question}
         images={images}
@@ -22,6 +22,7 @@ const QuizTrash = () => {
         correctImageIndex={correctImageIndex}
         audioSrc={audioSrc}
         tip={tip}
+        skipLink={skipLink}
       />
     </>
   );

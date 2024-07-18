@@ -12,15 +12,16 @@ const QuizTraffic = () => {
   const correctAnswerIndex = 0;
   const audioSrc = "/assets/audio/question-example.mp3";
   const tip = "Der Vogel hat einen blauen Kopf";
+  const skipLink = "/verkehr";
   return (
     <>
-      <h1>Traffic</h1>
       <QuestionSelect
         question={question}
         answers={answers}
         correctAnswerIndex={correctAnswerIndex}
         audioSrc={audioSrc}
         tip={tip}
+        skipLink={skipLink}
       />
     </>
   );
