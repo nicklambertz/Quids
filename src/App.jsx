@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import LogIn from "./components/LogIn";
+import LogIn from "./components/LogIn/LogIn";
 import Animals from "./components/Categories/Animals";
 import Traffic from "./components/Categories/Traffic";
 import Food from "./components/Categories/Food";
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="home" element={<Home />} />
 
         <Route path="login" element={<LogIn />} />
 

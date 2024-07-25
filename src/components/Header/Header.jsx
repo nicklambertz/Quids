@@ -9,7 +9,7 @@ const Header = () => {
         className={`${styles.header__link} ${styles.header__name}`}
       >
         <img src="./assets/img/avatar1.jpg" />
-        <span>{window.localStorage.getItem("name")} </span>
+        <span>{window.localStorage.getItem("benutzername")} </span>
         <span>{window.localStorage.getItem("score") ?? 0}</span>
       </Link>
       <Link to="/login" className={`${styles.header__link} ${styles.logo}`}>
