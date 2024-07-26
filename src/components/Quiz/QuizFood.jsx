@@ -8,6 +8,7 @@ const QuizFood = () => {
   const audioSrc = "./assets/audio/question-example.mp3";
   const tip = "Schaue in dem Mund des Monsters nach";
   const skipLink = "/nahrung";
+  const nextQuestionLink = "/muell1";
   return (
     <>
       <QuestionClickPoints
@@ -17,6 +18,7 @@ const QuizFood = () => {
         audioSrc={audioSrc}
         tip={tip}
         skipLink={skipLink}
+        nextQuestionLink={nextQuestionLink}
       />
     </>
   );

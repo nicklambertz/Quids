@@ -167,8 +167,8 @@ body {
 }
 
 .speaker-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: auto;
 }
 
 .answers {
@@ -265,7 +265,7 @@ body {
 .question-click-point_image-container {
   position: relative;
   display: inline-block;
-  width: 300px;
+  width: 250px;
   height: auto;
   margin: 0 auto;
 }
@@ -319,7 +319,7 @@ body {
 .question-time-click_image-container {
   position: relative;
   display: inline-block;
-  width: 300px;
+  width: 250px;
   height: auto;
   margin: 0 auto;
 }
@@ -422,12 +422,14 @@ body {
 .settings-page {
   width: 100%;
   max-width: 600px;
-  margin-top: 40px;
-  padding: 0 20px;
-  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .revert-button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
   background: none;
   border: none;
   cursor: pointer;
@@ -438,10 +440,25 @@ body {
   height: 30px;
 }
 
+.revert-button-question {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.revert-button-question img {
+  width: 30px;
+  height: 30px;
+}
+
 .settings-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .settings-title {
@@ -459,8 +476,8 @@ body {
 }
 
 .avatar-image {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: auto;
   border-radius: 50%;
   margin-bottom: 10px;
 }

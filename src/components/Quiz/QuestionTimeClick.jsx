@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Banner from "./Banner";
 import Header from "../Header/Header";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const QuestionTimeClick = ({
   question,
@@ -11,14 +11,16 @@ const QuestionTimeClick = ({
   audioSrc,
   tip,
   skipLink,
+  nextQuestionLink,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [clickedPoint, setClickedPoint] = useState(null);
   const [showBanner, setShowBanner] = useState(false);
   const [bannerMessage, setBannerMessage] = useState("");
   const [isCorrect, setIsCorrect] = useState(false);
-  const [bannerKey, setBannerKey] = useState(0); // Key für das Banner
-  const [answerSelected, setAnswerSelected] = useState(false); // Variable, um festzuhalten, ob eine Antwort ausgewählt wurde
+  const [bannerKey, setBannerKey] = useState(0);
+  const [answerSelected, setAnswerSelected] = useState(false);
+  const navigate = useNavigate();
 
   const updateScore = (points) => {
     const currentScore = parseInt(window.localStorage.getItem("score")) || 0;
@@ -29,8 +31,8 @@ const QuestionTimeClick = ({
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setClickedPoint(null); // Click-Marker wird nach jedem Bildwechsel zurückgesetzt
-      setAnswerSelected(false); // Antwort-Auswahl wird zurückgesetzt
+      setClickedPoint(null);
+      setAnswerSelected(false);
     }, interval);
 
     return () => clearInterval(timer);
@@ -47,19 +49,21 @@ const QuestionTimeClick = ({
 
     if (isCorrectClick) {
       setBannerMessage("Richtig! Gut gemacht!");
-      updateScore(25); // Punkte um 25 erhöhen
+      updateScore(50); // Punkte um 50 erhöhen
+      setShowBanner(true);
+      setTimeout(() => {
+        setShowBanner(false);
+        navigate("/punkte");
+        setTimeout(() => {
+          navigate(nextQuestionLink);
+        }, 3000);
+      }, 3000);
     } else {
       setBannerMessage("Oh nein, das war leider falsch. \nTipp: " + tip);
+      setShowBanner(true);
+      setTimeout(() => setShowBanner(false), 3000);
     }
 
-    // Banner-Update-Logik nur ausführen, wenn eine neue Antwort ausgewählt wurde
-    if (answerSelected) {
-      setShowBanner(false);
-      setBannerKey((prevKey) => prevKey + 1);
-      setShowBanner(true); // Zeige das neue Banner sofort an
-    }
-
-    // Markiere, dass eine Antwort ausgewählt wurde
     setAnswerSelected(true);
   };
 
@@ -72,6 +76,15 @@ const QuestionTimeClick = ({
     <div className="question-container">
       <div className="container">
         <Header />
+        <Link to="/">
+          <button className="revert-button-question">
+            <img
+              src="./assets/img/revert.png"
+              alt="Zurück"
+              className="revert-button img"
+            />
+          </button>
+        </Link>
         <h1 className="question">{question}</h1>
         <div className="audio-container" onClick={playAudio}>
           <img

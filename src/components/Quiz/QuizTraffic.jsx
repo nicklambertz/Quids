@@ -13,6 +13,7 @@ const QuizTraffic = () => {
   const audioSrc = "/assets/audio/question-example.mp3";
   const tip = "Der Vogel hat einen blauen Kopf";
   const skipLink = "/verkehr";
+  const nextQuestionLink = "/nahrung1";
   return (
     <>
       <QuestionSelect
@@ -22,6 +23,7 @@ const QuizTraffic = () => {
         audioSrc={audioSrc}
         tip={tip}
         skipLink={skipLink}
+        nextQuestionLink={nextQuestionLink}
       />
     </>
   );
