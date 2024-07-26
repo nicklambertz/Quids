@@ -13,6 +13,7 @@ const QuizTrash = () => {
   const audioSrc = "/assets/audio/question-example.mp3";
   const tip = "Du darfst gehen, wenn die Ampel grün ist";
   const skipLink = "/muell";
+  const nextQuestionLink = "/";
   return (
     <>
       <QuestionTimeClick
@@ -23,6 +24,7 @@ const QuizTrash = () => {
         audioSrc={audioSrc}
         tip={tip}
         skipLink={skipLink}
+        nextQuestionLink={nextQuestionLink}
       />
     </>
   );

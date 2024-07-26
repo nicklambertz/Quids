@@ -3,6 +3,7 @@
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__link {
@@ -17,40 +18,53 @@
   color: inherit;
 }
 
-.header__name,
-.header__reset {
+.header__score {
   background: gray;
-  width: fit-content;
   border-radius: 50rem;
   display: flex;
-  gap: 1rem;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  gap: 1.5rem;
 }
 
-.header__name > img {
+.header__score > img {
   object-fit: cover;
-  height: 100%;
-  border-radius: 50rem;
-  max-height: 4rem;
-  aspect-ratio: 1/1;
-  padding: 5px;
+  height: 4rem;
+  width: 4rem;
 }
 
-.header__name > span:first-of-type {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.header__name > span:last-of-type {
-  font-size: 2rem;
-  margin-right: 1rem;
-}
-
-.header__reset {
-  padding: 1rem;
-  font-size: 2rem;
-}
 .logo {
-  font-family: "Courier New", Courier, monospace;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.logo > img {
+  width: 300px;
+  height: auto;
+}
+
+.header__profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: gray;
+  border-radius: 50rem;
+  padding: 1rem;
+}
+
+.header__profile > img {
+  object-fit: cover;
+  height: 4rem;
+  width: 4rem;
+}
+
+.header__profile > span {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
