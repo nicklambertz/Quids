@@ -3,17 +3,17 @@ import { useNavigate} from "react-router-dom";
 import styles from "./LogIn.module.css";
 
 const LogIn = () => {
-  const [benutzername, setBenutzername] = useState("");
+  const [nickname, setNickname] = useState("");
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
-    setBenutzername(event.target.value);
+    setNickname(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    localStorage.setItem("benutzername", benutzername);
-    navigate("/home");
+    localStorage.setItem("nickname", nickname);
+    navigate("/");
   };
 
   return (
@@ -24,10 +24,10 @@ const LogIn = () => {
         <input
           className={styles["logIn__benutzername"]}
           type="text"
-          name="benutzername"
+          name="nickname"
           size={30}
           placeholder="Dein Name"
-          value={benutzername}
+          value={nickname}
           onChange={handleInputChange}
         />
         <input className={styles["logIn__submit"]} type="submit" value="Weiter" />
