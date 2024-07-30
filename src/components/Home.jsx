@@ -1,9 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "./Header/Header";
 import Navbar from "./Navbar/Navbar";
 import Categories from "./Categories/Categories";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    const nickname = localStorage.getItem("nickname");
+    if (!nickname) {
+      navigate("/login");
+    }
+  }, [navigate]);
+
   return (
     <>
       <link
@@ -16,12 +26,10 @@ const Home = () => {
         <Header />
         <Categories
           categories={[
-            { link: "", label: "Tiere", icon: "lion.png" },
-            { link: "", label: "Afrika", icon: "lion.png" },
-            { link: "", label: "Asien", icon: "lion.png" },
-            { link: "", label: "Europa", icon: "lion.png" },
-            { link: "", label: "Amerika", icon: "lion.png" },
-            { link: "", label: "Tiere", icon: "zoo.jpg" },
+            { link: "", label: "Home", icon: "numbers.png" },
+            { link: "", label: "Home", icon: "numbers.png" },
+            { link: "", label: "Home", icon: "numbers.png" },
+            { link: "", label: "Home", icon: "numbers.png" },
           ]}
         />
         <div>

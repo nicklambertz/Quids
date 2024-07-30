@@ -9,32 +9,32 @@ const ProgressBar = () => {
     setProgress(storedScore);
   }, []);
 
-  const progressWidth = progress >= 400 ? 100 : ((progress % 400) * 100) / 400;
+  const progressWidth = progress >= 800 ? 100 : ((progress % 800) * 100) / 800;
 
   return (
     <div className="progressbar-container">
       <div className="progressbar">
         <div
           className="progressbar__fill"
-          style={{ width: `${progressWidth}%`, minWidth: "10px" }}
+          style={{ width: `${progressWidth}%`, minWidth: "0px" }}
         ></div>
         <div
-          className={`star star1 ${progress >= 100 ? "visible" : "invisible"}`}
+          className={`star star1 ${progress >= 200 ? "visible" : "invisible"}`}
         >
           ⭐
         </div>
         <div
-          className={`star star2 ${progress >= 200 ? "visible" : "invisible"}`}
+          className={`star star2 ${progress >= 400 ? "visible" : "invisible"}`}
         >
           ⭐
         </div>
         <div
-          className={`star star3 ${progress >= 300 ? "visible" : "invisible"}`}
+          className={`star star3 ${progress >= 600 ? "visible" : "invisible"}`}
         >
           ⭐
         </div>
         <div
-          className={`star star4 ${progress >= 400 ? "visible" : "invisible"}`}
+          className={`star star4 ${progress >= 800 ? "visible" : "invisible"}`}
         >
           ⭐
         </div>

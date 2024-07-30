@@ -20,8 +20,6 @@ const Language = () => {
             { link: "", label: "Afrika", icon: "lion.png" },
             { link: "", label: "Asien", icon: "lion.png" },
             { link: "", label: "Europa", icon: "lion.png" },
-            { link: "", label: "Amerika", icon: "lion.png" },
-            { link: "", label: "Tiere", icon: "zoo.jpg" },
           ]}
         />
         <div>

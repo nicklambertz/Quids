@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Banner from "./Banner";
 import Header from "../Header/Header";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const QuestionSelect = ({
   question,
@@ -10,11 +10,13 @@ const QuestionSelect = ({
   audioSrc,
   tip,
   skipLink,
+  nextQuestionLink,
 }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
   const [bannerMessage, setBannerMessage] = useState("");
+  const navigate = useNavigate();
 
   const updateScore = (points) => {
     const currentScore = parseInt(window.localStorage.getItem("score")) || 0;
@@ -32,13 +34,21 @@ const QuestionSelect = ({
     if (isAnswerCorrect) {
       setBannerMessage("Richtig! Gut gemacht!");
       setIsCorrect(true);
-      updateScore(25); // Punkte um 25 erhöhen
+      updateScore(50); // Punkte um 50 erhöhen
+      setShowBanner(true);
+      setTimeout(() => {
+        setShowBanner(false);
+        navigate("/punkte");
+        setTimeout(() => {
+          navigate(nextQuestionLink);
+        }, 3000);
+      }, 3000);
     } else {
       setBannerMessage("Oh nein, das war leider falsch. \nTipp: " + tip);
       setIsCorrect(false);
+      setShowBanner(true);
+      setTimeout(() => setShowBanner(false), 3000);
     }
-    setShowBanner(true);
-    setTimeout(() => setShowBanner(false), 5000); // Banner nach 5 Sekunden ausblenden
   };
 
   const playAudio = () => {
@@ -50,6 +60,15 @@ const QuestionSelect = ({
     <div className="question-container">
       <div className="container">
         <Header />
+        <Link to="/">
+          <button className="revert-button-question">
+            <img
+              src="./assets/img/revert.png"
+              alt="Zurück"
+              className="revert-button img"
+            />
+          </button>
+        </Link>
         <h1 className="question">{question}</h1>
         <div className="audio-container" onClick={playAudio}>
           <img
