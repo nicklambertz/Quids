@@ -17,7 +17,7 @@ const Traffic = () => {
         <Categories
           categories={[
             { link: "/verkehr1", label: "Ampel", icon: "traffic-light.png" },
-            { link: "", label: "Afrika", icon: "lion.png" },
+            { link: "/verkehr2", label: "Afrika", icon: "lion.png" },
             { link: "", label: "Asien", icon: "lion.png" },
             { link: "", label: "Europa", icon: "lion.png" },
           ]}

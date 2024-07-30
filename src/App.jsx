@@ -10,6 +10,7 @@ import Language from "./components/Categories/Language";
 import PointOverview from "./components/Points/PointOverview";
 import Settings from "./components/Settings/Settings";
 import QuizTraffic from "./components/Quiz/QuizTraffic";
+import QuizTrafficMultiple from "./components/Quiz/QuizTrafficMultiple";
 import QuizFood from "./components/Quiz/QuizFood";
 import QuizTrash from "./components/Quiz/QuizTrash";
 import BackgroundMusic from "./components/Settings/BackgroundMusic";
@@ -31,6 +32,7 @@ const App = () => {
 
           <Route path="verkehr" element={<Traffic />} />
           <Route path="verkehr1" element={<QuizTraffic />} />
+          <Route path="verkehr2" element={<QuizTrafficMultiple />} />
 
           <Route path="nahrung" element={<Food />} />
           <Route path="nahrung1" element={<QuizFood />} />
