@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Router, Routes } from "react-router-dom";
-import LogIn from "./components/LogIn";
+import LogIn from "./components/LogIn/LogIn";
 import Home from "./components/Home";
 import Animals from "./components/Categories/Animals";
 import Traffic from "./components/Categories/Traffic";
