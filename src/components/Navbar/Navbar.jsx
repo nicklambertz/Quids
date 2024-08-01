@@ -8,9 +8,9 @@ const Navbar = () => {
 
   const links = [
     {
-      link: "/tiere",
-      label: "Tiere",
-      icon: "lion.png",
+      link: "/nahrung",
+      label: "Nahrung",
+      icon: "numbers.png",
     },
     {
       link: "/verkehr",
@@ -18,19 +18,19 @@ const Navbar = () => {
       icon: "traffic-light.png",
     },
     {
-      link: "/nahrung",
-      label: "Nahrung",
-      icon: "numbers.png",
-    },
-    {
       link: "/muell",
       label: "Müll",
       icon: "trash.png",
     },
     {
-      link: "/sprache",
-      label: "Buch",
-      icon: "open-book.png",
+      link: "/tiere",
+      label: "Tiere",
+      icon: "lion.png",
+    },
+    {
+      link: "/nacht",
+      label: "Nacht",
+      icon: "star-filled.png",
     },
   ];
 

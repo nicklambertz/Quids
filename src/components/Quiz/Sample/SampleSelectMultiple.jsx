@@ -1,7 +1,7 @@
 import React from "react";
 import QuestionSelectMultiple from "./QuestionSelectMultiple";
 
-const QuizTrafficMultiple = () => {
+const QuizTraffic2 = () => {
   const question = "Welcher Vogel legt seine Eier in fremde Nester?";
   const answers = [
     { imgSrc: "./assets/img/avatar1.jpg", text: "Kuckuck" },
@@ -30,4 +30,4 @@ const QuizTrafficMultiple = () => {
   );
 };
 
-export default QuizTrafficMultiple;
+export default QuizTraffic2;
