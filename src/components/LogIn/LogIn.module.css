@@ -1,51 +1,48 @@
 body {
-    background-image: url("../../../public/assets/img/loginbackgr.jpg");
-    background-size: cover;
-    font-family: "Short Stack", cursive;
+  font-family: "Short Stack", cursive;
 }
-.logIn__container{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30vh;
-    border-radius: 1rem;
-    background-color:rgba(194,108, 235, 0.5);
+.logIn__container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+  border-radius: 1rem;
+  background-color: rgba(194, 108, 235, 0.5);
 }
 
 h1 {
-    color: beige;
+  color: beige;
 }
 
-.logIn__eingabeauforderung-h2{
-    font-size: 4rem;
-    color: white;
-    justify-self: top;
+.logIn__eingabeauforderung-h2 {
+  font-size: 4rem;
+  color: white;
+  justify-self: top;
 }
 
-.logIn__eingabeauforderung-p{
-    font-size: 3rem;
-    color: white;
+.logIn__eingabeauforderung-p {
+  font-size: 3rem;
+  color: white;
 }
 
 .logIn__benutzername {
-    background: rgb(255, 255, 255);
-    border-radius: 1rem;
-    border-color: #EF7721;
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 1rem;
+  background: rgb(255, 255, 255);
+  border-radius: 1rem;
+  border-color: #ef7721;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .logIn__submit {
-    background: #EF7721;
-    border-radius: 1rem;
-    border-color: #EF7721;
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 1rem;
-    color: white;
+  background: #ef7721;
+  border-radius: 1rem;
+  border-color: #ef7721;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
 }
-
