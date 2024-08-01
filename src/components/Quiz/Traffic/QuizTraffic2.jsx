@@ -1,5 +1,6 @@
 import React from "react";
 import QuestionSelectMultiple from "../QuestionSelectMultiple";
+import PageWrapper from "../../PageWrapper";
 
 const QuizTraffic2 = () => {
   const question = "Welcher Vogel legt seine Eier in fremde Nester?";
@@ -17,15 +18,17 @@ const QuizTraffic2 = () => {
 
   return (
     <>
-      <QuestionSelectMultiple
-        question={question}
-        answers={answers}
-        correctAnswersIndices={correctAnswersIndices}
-        audioSrc={audioSrc}
-        tip={tip}
-        skipLink={skipLink}
-        nextQuestionLink={nextQuestionLink}
-      />
+      <PageWrapper background="url('./assets/img/background1.jpeg')">
+        <QuestionSelectMultiple
+          question={question}
+          answers={answers}
+          correctAnswersIndices={correctAnswersIndices}
+          audioSrc={audioSrc}
+          tip={tip}
+          skipLink={skipLink}
+          nextQuestionLink={nextQuestionLink}
+        />
+      </PageWrapper>
     </>
   );
 };

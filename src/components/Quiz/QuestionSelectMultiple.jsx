@@ -95,6 +95,7 @@ const QuestionSelectMultiple = ({
                 selectedAnswers.includes(index) ? "selected" : ""
               }`}
               onClick={() => toggleAnswerSelection(index)}
+              style={{ backgroundColor: answer.color }}
             >
               <img
                 src={answer.imgSrc}

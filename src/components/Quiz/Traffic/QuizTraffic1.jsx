@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import QuestionSelect from "../QuestionSelect";
+import PageWrapper from "../../PageWrapper";
 
 const QuizTraffic1 = () => {
   const question = "Welcher Vogel legt seine Eier in fremde Nester?";
@@ -16,15 +17,17 @@ const QuizTraffic1 = () => {
   const nextQuestionLink = "/nahrung1";
   return (
     <>
-      <QuestionSelect
-        question={question}
-        answers={answers}
-        correctAnswerIndex={correctAnswerIndex}
-        audioSrc={audioSrc}
-        tip={tip}
-        skipLink={skipLink}
-        nextQuestionLink={nextQuestionLink}
-      />
+      <PageWrapper background="url('./assets/img/background1.jpeg')">
+        <QuestionSelect
+          question={question}
+          answers={answers}
+          correctAnswerIndex={correctAnswerIndex}
+          audioSrc={audioSrc}
+          tip={tip}
+          skipLink={skipLink}
+          nextQuestionLink={nextQuestionLink}
+        />
+      </PageWrapper>
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import QuestionTimeClick from "./QuestionTimeClick";
+import PageWrapper from "../../PageWrapper";
 
 const QuizTrash1 = () => {
   const question = "Klicke auf die Ampel, wenn du über die Straße gehen darfst";
@@ -16,16 +17,18 @@ const QuizTrash1 = () => {
   const nextQuestionLink = "/";
   return (
     <>
-      <QuestionTimeClick
-        question={question}
-        images={images}
-        interval={interval}
-        correctImageIndex={correctImageIndex}
-        audioSrc={audioSrc}
-        tip={tip}
-        skipLink={skipLink}
-        nextQuestionLink={nextQuestionLink}
-      />
+      <PageWrapper background="url('./assets/img/background1.jpeg')">
+        <QuestionTimeClick
+          question={question}
+          images={images}
+          interval={interval}
+          correctImageIndex={correctImageIndex}
+          audioSrc={audioSrc}
+          tip={tip}
+          skipLink={skipLink}
+          nextQuestionLink={nextQuestionLink}
+        />
+      </PageWrapper>
     </>
   );
 };
