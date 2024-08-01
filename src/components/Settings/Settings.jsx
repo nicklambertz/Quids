@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useMusic } from "./MusicContext";
 import Header from "../Header/Header";
+import PageWrapper from "../PageWrapper";
 
 const Settings = () => {
   const [nickname, setNickname] = useState("Peter");
@@ -52,72 +53,77 @@ const Settings = () => {
   };
 
   return (
-    <div className="container">
-      <Header />
-      <div className="settings-page">
-        <Link to="/">
-          <button className="revert-button">
-            <img
-              src="./assets/img/revert.png"
-              alt="Zurück"
-              className="revert-button img"
-            />
-          </button>
-        </Link>
-        <div className="settings-content">
-          <h2 className="settings-title">Einstellungen</h2>
-          <div className="avatar-section">
-            <img
-              src={avatars[avatarIndex]}
-              alt="Avatar"
-              className="avatar-image"
-            />
-            <button className="edit-avatar-button" onClick={changeAvatar}>
-              Avatar ändern
-            </button>
-          </div>
-          <div className="divider" />
-          <div className="nickname-section">
-            <label className="nickname-label">Dein Name</label>
-            {!isEditing ? (
-              <div className="nickname-display" onClick={toggleEditing}>
-                <span>{nickname}</span>
-                <img
-                  src="./assets/img/arrow.png"
-                  alt="Edit"
-                  className="edit-arrow"
-                />
-              </div>
-            ) : (
-              <div className="nickname-edit">
-                <input
-                  type="text"
-                  value={nickname}
-                  onChange={handleNicknameChange}
-                  className="nickname-input"
-                />
-                <button className="save-nickname-button" onClick={saveNickname}>
-                  Speichern
-                </button>
-              </div>
-            )}
-          </div>
-          <div className="divider" />
-          <div className="sound-section">
-            <label className="sound-label">Ton</label>
-            <label className="switch">
-              <input
-                type="checkbox"
-                checked={isPlaying}
-                onChange={() => setIsPlaying(!isPlaying)}
+    <PageWrapper background="url('./assets/img/background1.jpeg')">
+      <div className="container">
+        <Header />
+        <div className="settings-page">
+          <Link to="/">
+            <button className="revert-button-question">
+              <img
+                src="./assets/img/revert.png"
+                alt="Zurück"
+                className="revert-button img"
               />
-              <span className="slider round"></span>
-            </label>
+            </button>
+          </Link>
+          <div className="settings-content">
+            <h2 className="settings-title">Einstellungen</h2>
+            <div className="avatar-section">
+              <img
+                src={avatars[avatarIndex]}
+                alt="Avatar"
+                className="avatar-image"
+              />
+              <button className="edit-avatar-button" onClick={changeAvatar}>
+                Avatar ändern
+              </button>
+            </div>
+            <div className="divider" />
+            <div className="nickname-section">
+              <label className="nickname-label">Dein Name</label>
+              {!isEditing ? (
+                <div className="nickname-display" onClick={toggleEditing}>
+                  <span>{nickname}</span>
+                  <img
+                    src="./assets/img/arrow.png"
+                    alt="Edit"
+                    className="edit-arrow"
+                  />
+                </div>
+              ) : (
+                <div className="nickname-edit">
+                  <input
+                    type="text"
+                    value={nickname}
+                    onChange={handleNicknameChange}
+                    className="nickname-input"
+                  />
+                  <button
+                    className="save-nickname-button"
+                    onClick={saveNickname}
+                  >
+                    Speichern
+                  </button>
+                </div>
+              )}
+            </div>
+            <div className="divider" />
+            <div className="sound-section">
+              <label className="sound-label">Ton</label>
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  checked={isPlaying}
+                  onChange={() => setIsPlaying(!isPlaying)}
+                />
+                <span className="slider round"></span>
+              </label>
+            </div>
+            <div className="divider" />
           </div>
-          <div className="divider" />
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

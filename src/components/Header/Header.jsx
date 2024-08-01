@@ -42,7 +42,7 @@ const Header = () => {
         <img src="./assets/img/star-filled.png" alt="Star" />
         <span>{score}</span>
       </Link>
-      <Link to="/login" className={`${styles.header__link} ${styles.logo}`}>
+      <Link to="/" className={`${styles.header__link} ${styles.logo}`}>
         <img src="./assets/img/quids-logo.png" alt="Logo" />
       </Link>
       <Link

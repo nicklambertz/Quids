@@ -83,6 +83,7 @@ const QuestionSelect = ({
               key={index}
               className={`answer ${selectedAnswer === index ? "selected" : ""}`}
               onClick={() => handleAnswerClick(index)}
+              style={{ backgroundColor: answer.color }}
             >
               <img
                 src={answer.imgSrc}

@@ -34,7 +34,7 @@ body {
 }
 
 .score-container {
-  background-color: green;
+  background-color: rgb(176, 196, 222);
   border-radius: 20px;
   padding: 20px;
   margin-top: 50px;
@@ -65,7 +65,7 @@ body {
 .progressbar {
   position: relative;
   width: 600px;
-  background-color: yellow;
+  background-color: rgb(176, 196, 222);
   border-radius: 15px;
   overflow: hidden;
   height: 40px;
@@ -74,7 +74,7 @@ body {
 
 .progressbar__fill {
   height: 100%;
-  background-color: green;
+  background-color: rgb(233, 249, 56);
   border-radius: 15px 0 0 15px;
   transition: width 1.3s ease;
 }
@@ -187,7 +187,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: green;
   color: black;
   font-size: 18px;
   font-weight: bold;
@@ -232,7 +231,7 @@ body {
   font-size: 18px;
   cursor: pointer;
   border-radius: 15px;
-  background-color: rgb(0, 221, 255);
+  background-color: rgb(197, 113, 253);
   border-style: none;
 }
 
@@ -259,7 +258,7 @@ body {
   width: 100px;
   height: 50px;
   border: none;
-  background-color: green;
+  background-color: rgb(197, 113, 253);
   cursor: pointer;
   border-radius: 15px;
   outline: none;
@@ -382,7 +381,7 @@ body {
 }
 
 .banner-right {
-  background-color: #a4de02;
+  background-color: rgb(144, 238, 144);
   color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -407,7 +406,7 @@ body {
 }
 
 .banner-wrong {
-  background-color: #fc594a;
+  background-color: rgb(255, 99, 71);
   color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -453,10 +452,13 @@ body {
 .revert-button {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
-  background: none;
+  width: 100px;
+  height: 50px;
   border: none;
   cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+  text-decoration: none;
 }
 
 .revert-button img {
@@ -466,11 +468,16 @@ body {
 
 .revert-button-question {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  background: none;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 100px;
+  height: 50px;
   border: none;
+  background-color: rgb(197, 113, 253);
   cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+  text-decoration: none;
 }
 
 .revert-button-question img {
@@ -507,7 +514,7 @@ body {
 }
 
 .edit-avatar-button {
-  background-color: green;
+  background-color: rgb(197, 113, 253);
   border: none;
   padding: 10px 20px;
   border-radius: 15px;
@@ -563,8 +570,8 @@ body {
 }
 
 .save-nickname-button {
-  background-color: green;
-  color: white;
+  background-color: rgb(197, 113, 253);
+
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -621,7 +628,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: green;
+  background-color: rgb(197, 113, 253);
 }
 
 input:checked + .slider:before {
