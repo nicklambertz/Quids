@@ -18,10 +18,13 @@ const Traffic = () => {
           <Header />
           <Categories
             categories={[
-              { link: "/verkehr1", label: "Ampel", icon: "traffic-light.png" },
-              { link: "/verkehr2", label: "Afrika", icon: "lion.png" },
-              { link: "", label: "Asien", icon: "lion.png" },
-              { link: "", label: "Europa", icon: "lion.png" },
+              {
+                link: "/verkehr1",
+                label: "Verkehr",
+                icon: "traffic-light.png",
+              },
+              { link: "/verkehr2", label: "Verkehr", icon: "lion.png" },
+              { link: "/verkehr3", label: "Verkehr", icon: "lion.png" },
             ]}
           />
           <div>

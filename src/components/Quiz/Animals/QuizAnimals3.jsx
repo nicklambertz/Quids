@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import QuestionClickPoints from "../QuestionClickPoint";
 import PageWrapper from "../../PageWrapper";
 
-const QuizNight1 = () => {
+const QuizAnimals3 = () => {
   const question = "Wo ist der linke obere Zahn von dem Monster?";
   const image = "./assets/img/avatar1.jpg";
   const correctArea = { x: 120, y: 100, width: 30, height: 30 };
@@ -27,4 +27,4 @@ const QuizNight1 = () => {
   );
 };
 
-export default QuizNight1;
+export default QuizAnimals3;

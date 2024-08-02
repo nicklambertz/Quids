@@ -18,19 +18,14 @@ const Navbar = () => {
       icon: "traffic-light.png",
     },
     {
-      link: "/muell",
-      label: "Müll",
-      icon: "trash.png",
-    },
-    {
       link: "/tiere",
       label: "Tiere",
       icon: "lion.png",
     },
     {
-      link: "/nacht",
-      label: "Nacht",
-      icon: "star-filled.png",
+      link: "/allgemein",
+      label: "Allgemein",
+      icon: "trash.png",
     },
   ];
 

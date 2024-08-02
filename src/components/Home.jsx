@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "./Header/Header";
 import Navbar from "./Navbar/Navbar";
-import Categories from "./Categories/Categories";
 import PageWrapper from "./PageWrapper";
+import styles from "./Categories/categories.module.css";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -18,22 +19,17 @@ const Home = () => {
   return (
     <>
       <PageWrapper background="url('./assets/img/background1.jpeg')">
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-          crossorigin="anonymous"
-        ></link>
         <div className="container">
           <Header />
-          <Categories
-            categories={[
-              { link: "", label: "Home", icon: "numbers.png" },
-              { link: "", label: "Home", icon: "numbers.png" },
-              { link: "", label: "Home", icon: "numbers.png" },
-              { link: "", label: "Home", icon: "numbers.png" },
-            ]}
-          />
+          <div className={styles["categories-container"]}>
+            <Link to={"/verkehr1"} className={styles["start-quiz-button"]}>
+              <img src="./assets/img/play.png" alt="Play" />
+              Quiz starten
+            </Link>
+          </div>
+          <div className="container-welcome-banner">
+            <div className="welcome-banner-home">Willkommen!</div>
+          </div>
           <div>
             <Navbar />
           </div>

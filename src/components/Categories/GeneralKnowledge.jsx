@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Categories from "./Categories";
 import PageWrapper from "../PageWrapper";
 
-const Night = () => {
+const Trash = () => {
   return (
     <>
       <PageWrapper background="url('./assets/img/background1.jpeg')">
@@ -18,10 +18,9 @@ const Night = () => {
           <Header />
           <Categories
             categories={[
-              { link: "/nacht1", label: "Tiere", icon: "zoo.jpg" },
-              { link: "nacht2", label: "Afrika", icon: "lion.png" },
-              { link: "", label: "Asien", icon: "lion.png" },
-              { link: "", label: "Europa", icon: "lion.png" },
+              { link: "/allgemein1", label: "Allgemein", icon: "trash.png" },
+              { link: "/allgemein2", label: "Allgemein", icon: "lion.png" },
+              { link: "/allgemein3", label: "Allgemein", icon: "lion.png" },
             ]}
           />
           <div>
@@ -33,4 +32,4 @@ const Night = () => {
   );
 };
 
-export default Night;
+export default Trash;

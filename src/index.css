@@ -156,11 +156,18 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: black;
+  background-color: aquamarine;
+  border-radius: 15px;
+  justify-content: center;
+  padding: 10px 20px;
   margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .audio-container {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
@@ -215,7 +222,7 @@ body {
 }
 
 .answer.selected {
-  transform: scale(1.1);
+  transform: scale(1.2);
   background-color: grey;
 }
 
@@ -382,7 +389,7 @@ body {
 
 .banner-right {
   background-color: rgb(144, 238, 144);
-  color: #ffffff;
+  color: black;
   text-align: center;
   padding: 20px;
   border-radius: 15px;
@@ -407,7 +414,7 @@ body {
 
 .banner-wrong {
   background-color: rgb(255, 99, 71);
-  color: #ffffff;
+  color: black;
   text-align: center;
   padding: 20px;
   border-radius: 15px;
@@ -641,4 +648,30 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.container-welcome-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-banner-home {
+  width: 700px;
+  height: 250px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(37, 173, 241);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(23, 193, 255) 0%,
+    rgb(170, 1, 208) 100%
+  );
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  text-align: center;
 }

@@ -19,9 +19,8 @@ const Animals = () => {
           <Categories
             categories={[
               { link: "/tiere1", label: "Tiere", icon: "zoo.jpg" },
-              { link: "/tiere2", label: "Afrika", icon: "lion.png" },
-              { link: "", label: "Asien", icon: "lion.png" },
-              { link: "", label: "Europa", icon: "lion.png" },
+              { link: "/tiere2", label: "Tiere", icon: "lion.png" },
+              { link: "/tiere3", label: "Tiere", icon: "lion.png" },
             ]}
           />
           <div>

@@ -85,14 +85,16 @@ const QuestionTimeClick = ({
             />
           </button>
         </Link>
-        <h1 className="question">{question}</h1>
-        <div className="audio-container" onClick={playAudio}>
-          <img
-            src="assets/img/volumen.png"
-            alt="Play audio"
-            className="speaker-icon"
-          />
-        </div>
+        <h1 className="question">
+          {question}
+          <div className="audio-container" onClick={playAudio}>
+            <img
+              src="assets/img/volumen.png"
+              alt="Play audio"
+              className="speaker-icon"
+            />
+          </div>
+        </h1>
         <div
           className="question-time-click_image-container"
           onClick={handleClick}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import QuestionTimeClick from "../QuestionTimeClick";
 import PageWrapper from "../../PageWrapper";
 
-const QuizTrash1 = () => {
+const QuizGeneral1 = () => {
   const question = "Klicke auf die Ampel, wenn du über die Straße gehen darfst";
   const images = [
     "./assets/img/traffic-light-red.png",
@@ -33,4 +33,4 @@ const QuizTrash1 = () => {
   );
 };
 
-export default QuizTrash1;
+export default QuizGeneral1;

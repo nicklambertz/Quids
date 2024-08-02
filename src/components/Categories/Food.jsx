@@ -19,9 +19,8 @@ const Food = () => {
           <Categories
             categories={[
               { link: "/nahrung1", label: "Essen", icon: "star-filled.png" },
-              { link: "/nahrung2", label: "Afrika", icon: "lion.png" },
-              { link: "", label: "Asien", icon: "lion.png" },
-              { link: "", label: "Europa", icon: "lion.png" },
+              { link: "/nahrung2", label: "Essen", icon: "lion.png" },
+              { link: "/nahrung3", label: "Essen", icon: "lion.png" },
             ]}
             background={'url("./assets/img/background1.jpeg")'}
           />
