@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Banner = ({ message, isCorrect }) => {
+const Banner = ({ message, isCorrect, audioSrcCorrect, audioSrcIncorrect }) => {
   const bannerClass = isCorrect ? "banner-right" : "banner-wrong";
   const messageLines = message.split("\n");
 
@@ -22,13 +22,6 @@ const Banner = ({ message, isCorrect }) => {
         src={isCorrect ? "./assets/img/check.png" : "./assets/img/false.png"}
         alt={isCorrect ? "Correct" : "Incorrect"}
       />
-      <div className="audio-container-banner">
-        <img
-          src="assets/img/volumen.png"
-          alt="Play audio"
-          className="speaker-icon"
-        />
-      </div>
     </div>
   );
 };
