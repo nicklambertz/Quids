@@ -19,9 +19,12 @@
 }
 
 .header__score {
-  background: rgb(255, 182, 193);
-  border-radius: 50rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.2);
   display: flex;
+  width: 18rem;
+  height: 7rem;
+  border-radius: 2rem;
   align-items: center;
   justify-content: center;
   padding: 1rem 2rem;
@@ -32,8 +35,7 @@
 
 .header__score > img {
   object-fit: cover;
-  height: 4rem;
-  width: 4rem;
+  width: 5rem;
 }
 
 .logo {
@@ -41,7 +43,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .logo > img {
@@ -51,16 +54,19 @@
 
 .header__profile {
   display: flex;
+  width: 18rem;
+  height: 7rem;
   gap: 1.5rem;
   align-items: center;
-  background: rgb(255, 182, 193);
-  border-radius: 50rem;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
   padding: 1rem;
 }
 
 .header__profile > img {
   object-fit: cover;
-  height: 4rem;
   width: 4rem;
 }
 
