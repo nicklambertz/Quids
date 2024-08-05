@@ -1,35 +1,38 @@
 import React, { useState } from "react";
-import QuestionTimeClick from "../QuestionTimeClick";
+import QuestionDragAndDrop from "../QuestionDragAndDrop";
 import PageWrapper from "../../PageWrapper";
 
 const QuizGeneral1 = () => {
-  const question = "Klicke auf die Ampel, wenn du über die Straße gehen darfst";
-  const images = [
-    "./assets/img/traffic-light-red.png",
-    "./assets/img/traffic-light-yellow.png",
-    "./assets/img/traffic-light-green.png",
+  const question = "Trenne den Müll in die richtige Tonne!";
+  const dropBoxImages = [
+    "./assets/img/Gelbe Tonne.png",
+    "./assets/img/Bio Tonne.png",
+    "./assets/img/Blaue Tonne.png",
   ];
-  const interval = 1500;
-  const correctImageIndex = 2; //Index beginnt bei 0
-  const audioSrc = "/assets/audio/question-example.mp3";
-  const tip = "Du darfst gehen, wenn die Ampel grün ist";
-  const skipLink = "/muell";
-  const nextQuestionLink = "/";
+  const answerImages = [
+    { id: 0, src: "./assets/img/Plastikflasche.png", },
+    { id: 1, src: "./assets/img/Zeitung.png" },
+    { id: 2, src: "./assets/img/Bananenschale.png" },
+  ];
+  const correctIndices = [0, 2, 1];
+  const audioSrc = "assets/audio/10. Mülltrennung nach dem Zoo-Besuch.mp3";
+  const tip = "Denke an die Regeln der Mülltrennung";
+  const skipLink = "/allgemein2";
+  const nextQuestionLink = "/allgemein2";
+
   return (
-    <>
-      <PageWrapper background="url('./assets/img/background1.jpeg')">
-        <QuestionTimeClick
-          question={question}
-          images={images}
-          interval={interval}
-          correctImageIndex={correctImageIndex}
-          audioSrc={audioSrc}
-          tip={tip}
-          skipLink={skipLink}
-          nextQuestionLink={nextQuestionLink}
-        />
-      </PageWrapper>
-    </>
+    <PageWrapper background="url('./assets/img/background1.jpeg')">
+      <QuestionDragAndDrop
+        question={question}
+        dropBoxImages={dropBoxImages}
+        answerImages={answerImages}
+        correctIndices={correctIndices}
+        audioSrc={audioSrc}
+        tip={tip}
+        skipLink={skipLink}
+        nextQuestionLink={nextQuestionLink}
+      />
+    </PageWrapper>
   );
 };
 

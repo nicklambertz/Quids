@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import QuestionClickPoints from "../QuestionClickPoint";
+import QuestionSelect from "../QuestionSelect";
 import PageWrapper from "../../PageWrapper";
 
 const QuizGeneral2 = () => {
-  const question = "Wo ist der linke obere Zahn von dem Monster?";
-  const image = "./assets/img/avatar1.jpg";
-  const correctArea = { x: 120, y: 100, width: 30, height: 30 };
-  const audioSrc = "./assets/audio/question-example.mp3";
-  const tip = "Schaue in dem Mund des Monsters nach";
-  const skipLink = "/nahrung";
-  const nextQuestionLink = "/muell1";
+  const question = "Welche Aktivität hilft dir besser zu schlafen?";
+  const answers = [
+    { imgSrc: "./assets/img/Fernseher.png", text: "Fernsehen", color: "#87CEFA" },
+    { imgSrc: "./assets/img/Buch.png", text: "Buch lesen", color: "#FFA07A" },
+    { imgSrc: "./assets/img/iPad.png", text: "iPad", color: "#98FB98" },
+    { imgSrc: "./assets/img/Süßigkeiten.png", text: "Süßigkeiten", color: "#EEE8AA" },
+  ];
+  const correctAnswerIndex = 1;
+  const audioSrc = "/assets/audio/11. Schlafrituale für bessere Nächte.mp3";
+  const tip = "Der Vogel hat einen blauen Kopf";
+  const skipLink = "/allgemein3";
+  const nextQuestionLink = "/allgemein3";
   return (
     <>
-      <PageWrapper background="url('./assets/img/background1.jpeg')">
-        <QuestionClickPoints
+      <PageWrapper background="url('./assets/img/Schlafzimmer.png')">
+        <QuestionSelect
           question={question}
-          image={image}
-          correctArea={correctArea}
+          answers={answers}
+          correctAnswerIndex={correctAnswerIndex}
           audioSrc={audioSrc}
           tip={tip}
           skipLink={skipLink}
@@ -26,5 +31,6 @@ const QuizGeneral2 = () => {
     </>
   );
 };
+
 
 export default QuizGeneral2;

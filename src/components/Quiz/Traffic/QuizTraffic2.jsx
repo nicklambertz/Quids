@@ -1,28 +1,28 @@
 import React from "react";
-import QuestionSelectMultiple from "../QuestionSelectMultiple";
+import QuestionTimeClick from "../QuestionTimeClick";
 import PageWrapper from "../../PageWrapper";
 
 const QuizTraffic2 = () => {
-  const question = "Welcher Vogel legt seine Eier in fremde Nester?";
-  const answers = [
-    { imgSrc: "./assets/img/avatar1.jpg", text: "Kuckuck" },
-    { imgSrc: "./assets/img/settings.png", text: "Amsel" },
-    { imgSrc: "./assets/img/trash.png", text: "Buntspecht" },
-    { imgSrc: "./assets/img/volumen.png", text: "Taube" },
+  const question = "Klicke auf die Ampel, wenn du über die Straße gehen darfst";
+  const images = [
+    "./assets/img/traffic-light-red.png",
+    "./assets/img/traffic-light-yellow.png",
+    "./assets/img/traffic-light-green.png",
   ];
-  const correctAnswersIndices = [1];
-  const audioSrc = "/assets/audio/question-example.mp3";
-  const tip = "Der Vogel hat einen blauen Kopf";
-  const skipLink = "/verkehr";
-  const nextQuestionLink = "/nahrung1";
-
+  const interval = 1500;
+  const correctImageIndex = 2; //Index beginnt bei 0
+  const audioSrc = "/assets/audio/5. Sicher überqueren_ Ampelregeln.mp3";
+  const tip = "Du darfst gehen, wenn die Ampel grün ist";
+  const skipLink = "/verkehr3";
+  const nextQuestionLink = "/verkehr3";
   return (
     <>
-      <PageWrapper background="url('./assets/img/background1.jpeg')">
-        <QuestionSelectMultiple
+      <PageWrapper background="url('./assets/img/Road.png')">
+        <QuestionTimeClick
           question={question}
-          answers={answers}
-          correctAnswersIndices={correctAnswersIndices}
+          images={images}
+          interval={interval}
+          correctImageIndex={correctImageIndex}
           audioSrc={audioSrc}
           tip={tip}
           skipLink={skipLink}

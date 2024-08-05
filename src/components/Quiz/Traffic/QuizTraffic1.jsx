@@ -3,21 +3,20 @@ import QuestionSelect from "../QuestionSelect";
 import PageWrapper from "../../PageWrapper";
 
 const QuizTraffic1 = () => {
-  const question = "Welcher Vogel legt seine Eier in fremde Nester?";
+  const question = "Was solltest du immer tragen, wenn du Fahrrad fährst?";
   const answers = [
-    { imgSrc: "./assets/img/avatar1.jpg", text: "Kuckuck" },
-    { imgSrc: "./assets/img/settings.png", text: "Amsel" },
-    { imgSrc: "./assets/img/trash.png", text: "Buntspecht" },
-    { imgSrc: "./assets/img/volumen.png", text: "Taube" },
+    { imgSrc: "./assets/img/Fahrradhelm.png", text: "Fahrradhelm", color: "#87CEFA" },
+    { imgSrc: "./assets/img/Zauberhut.png", text: "Zauberhut", color: "#FFA07A" },
+    { imgSrc: "./assets/img/Weihnachtsmütze.png", text: "Mütze", color: "#98FB98" },
   ];
   const correctAnswerIndex = 0;
-  const audioSrc = "/assets/audio/question-example.mp3";
+  const audioSrc = "/assets/audio/4. Sicher unterwegs_ Fahrradhelm tragen!.mp3";
   const tip = "Der Vogel hat einen blauen Kopf";
-  const skipLink = "/verkehr";
-  const nextQuestionLink = "/nahrung1";
+  const skipLink = "/verkehr2";
+  const nextQuestionLink = "/verkehr2";
   return (
     <>
-      <PageWrapper background="url('./assets/img/background1.jpeg')">
+      <PageWrapper background="url('./assets/img/Road.png')">
         <QuestionSelect
           question={question}
           answers={answers}

@@ -20,11 +20,11 @@ const Traffic = () => {
             categories={[
               {
                 link: "/verkehr1",
-                label: "Verkehr",
+                label: "Fahrrad",
                 icon: "traffic-light.png",
               },
-              { link: "/verkehr2", label: "Verkehr", icon: "lion.png" },
-              { link: "/verkehr3", label: "Verkehr", icon: "lion.png" },
+              { link: "/verkehr2", label: "Ampel", icon: "traffic-light.png" },
+              { link: "/verkehr3", label: "Verkehrsschilder", icon: "traffic-light.png" },
             ]}
           />
           <div>

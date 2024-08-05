@@ -7,7 +7,7 @@ const Categories = (props) => {
 
   return (
     <div className={styles["categories-container"]}>
-      <Link to={"/verkehr1"} className={styles["start-quiz-button"]}>
+      <Link to={"/nahrung1"} className={styles["start-quiz-button"]}>
         <img src="./assets/img/play.png" alt="Play" />
         Quiz starten
       </Link>

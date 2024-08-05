@@ -3,22 +3,22 @@ import QuestionSelectMultiple from "../QuestionSelectMultiple";
 import PageWrapper from "../../PageWrapper";
 
 const QuizTraffic3 = () => {
-  const question = "Welcher Vogel legt seine Eier in fremde Nester?";
+  const question = "Bei welchem Schild musst du vor dem überqueren der Straße erst genau gucken?";
   const answers = [
-    { imgSrc: "./assets/img/avatar1.jpg", text: "Kuckuck" },
-    { imgSrc: "./assets/img/settings.png", text: "Amsel" },
-    { imgSrc: "./assets/img/trash.png", text: "Buntspecht" },
-    { imgSrc: "./assets/img/volumen.png", text: "Taube" },
+    { imgSrc: "./assets/img/Stop.png", color: "#87CEFA"},
+    { imgSrc: "./assets/img/Vorfahrt 2.png", color: "#FFA07A"},
+    { imgSrc: "./assets/img/Vortfahrt.png", color: "#98FB98"},
+    { imgSrc: "./assets/img/Vortfahrt gewaehren.png", color: "#EEE8AA"},
   ];
-  const correctAnswersIndices = [1];
-  const audioSrc = "/assets/audio/question-example.mp3";
+  const correctAnswersIndices = [0, 3];
+  const audioSrc = "/assets/audio/6. Acht auf Verkehrsschilder!.mp3";
   const tip = "Der Vogel hat einen blauen Kopf";
-  const skipLink = "/verkehr";
-  const nextQuestionLink = "/nahrung1";
+  const skipLink = "/tiere1";
+  const nextQuestionLink = "/tiere1";
 
   return (
     <>
-      <PageWrapper background="url('./assets/img/background1.jpeg')">
+      <PageWrapper background="url('./assets/img/Road.png')">
         <QuestionSelectMultiple
           question={question}
           answers={answers}
