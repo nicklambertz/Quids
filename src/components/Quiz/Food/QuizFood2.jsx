@@ -5,17 +5,17 @@ import PageWrapper from "../../PageWrapper";
 const QuizFood2 = () => {
   const question = "Welche Snacks sind gesund?";
   const answers = [
-    { imgSrc: "./assets/img/avatar1.jpg", text: "Chips", color: "#87CEFA" },
-    { imgSrc: "./assets/img/settings.png", text: "Orangen", color: "#FFA07A" },
-    { imgSrc: "./assets/img/trash.png", text: "Karotten", color: "#98FB98" },
+    { imgSrc: "./assets/img/chips.png", text: "Chips", color: "#87CEFA" },
+    { imgSrc: "./assets/img/karotten.png", text: "Karotten", color: "#FFA07A" },
+    { imgSrc: "./assets/img/Erdbeer.png", text: "Erdbeeren", color: "#98FB98" },
     {
-      imgSrc: "./assets/img/volumen.png",
+      imgSrc: "./assets/img/Eis.png",
       text: "Eis",
       color: "#EEE8AA",
     },
   ];
   const correctAnswersIndices = [1, 2];
-  const audioSrc = "/assets/audio/question-example.mp3";
+  const audioSrc = "/assets/audio/2. Gesunde Snacks.mp3";
   const tip = "Obst und Gemüse sind gesunde und leckere Snacks";
   const skipLink = "/nahrung3";
   const nextQuestionLink = "/nahrung3";
