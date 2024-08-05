@@ -690,8 +690,8 @@ input:checked + .slider:before {
 }
 
 .drop-box {
-  width: 120px;
-  height: 150px;
+  width: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -700,7 +700,7 @@ input:checked + .slider:before {
 }
 
 .drop-box-image {
-  width: 80px;
+  width: 160px;
   height: auto;
 }
 
@@ -726,8 +726,8 @@ input:checked + .slider:before {
 
 .draggable-answer {
   padding: 10px;
-  width: 100px;
-  height: 100px;
+  width: 170px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -735,7 +735,7 @@ input:checked + .slider:before {
 }
 
 .answer-option-image,
-.answer-image {
-  width: 80px;
+.answer-image-drag {
+  width: 160px;
   height: auto;
 }

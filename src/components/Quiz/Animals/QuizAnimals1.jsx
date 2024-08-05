@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import QuestionClickPoints from "../QuestionClickPoint";
+import QuestionSelect from "../QuestionSelect";
 import PageWrapper from "../../PageWrapper";
 
 const QuizAnimals1 = () => {
-  const question = "Wo ist der linke obere Zahn von dem Monster?";
-  const image = "./assets/img/avatar1.jpg";
-  const correctArea = { x: 120, y: 100, width: 30, height: 30 };
-  const audioSrc = "./assets/audio/question-example.mp3";
-  const tip = "Schaue in dem Mund des Monsters nach";
-  const skipLink = "/nahrung";
-  const nextQuestionLink = "/muell1";
+  const question = "Welches dieser Tiere lebt normalerweise in der Wüste?";
+  const answers = [
+    { imgSrc: "./assets/img/capybara 1.png", text: "Capybara", color: "#87CEFA" },
+    { imgSrc: "./assets/img/pinguin.png", text: "Pinguin", color: "#FFA07A" },
+    { imgSrc: "./assets/img/Kamel.png", text: "Kamel", color: "#98FB98" },
+    { imgSrc: "./assets/img/eisbaer.png", text: "Eisbär", color: "#EEE8AA" },
+  ];
+  const correctAnswerIndex = 2;
+  const audioSrc = "/assets/audio/7. Tiere der Wüste entdecken.mp3";
+  const tip = "Der Vogel hat einen blauen Kopf";
+  const skipLink = "/tiere2";
+  const nextQuestionLink = "/tiere2";
   return (
     <>
-      <PageWrapper background="url('./assets/img/background1.jpeg')">
-        <QuestionClickPoints
+      <PageWrapper background="url('./assets/img/Gehege 2.png')">
+        <QuestionSelect
           question={question}
-          image={image}
-          correctArea={correctArea}
+          answers={answers}
+          correctAnswerIndex={correctAnswerIndex}
           audioSrc={audioSrc}
           tip={tip}
           skipLink={skipLink}

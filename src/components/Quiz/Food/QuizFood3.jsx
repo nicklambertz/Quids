@@ -4,21 +4,19 @@ import QuestionDragAndDrop from "../QuestionDragAndDrop";
 import PageWrapper from "../../PageWrapper";
 
 const QuizFood3 = () => {
-  const question = "Ziehe die Gegenstände in die richtige Tonne";
+  const question = "Welches Lebensmittel ist reich an welchen Vitaminen?";
   const dropBoxImages = [
-    "./assets/img/trash.png",
-    "./assets/img/trash.png",
-    "./assets/img/trash.png",
-    "./assets/img/trash.png",
+    "./assets/img/Vitamin A.png" ,
+    "./assets/img/Vitamin B.png",
+    "./assets/img/Vitamin C.png",
   ];
   const answerImages = [
-    { id: 0, src: "./assets/img/numbers.png" },
-    { id: 1, src: "./assets/img/lion.png" },
-    { id: 2, src: "./assets/img/settings.png" },
-    { id: 3, src: "./assets/img/settings.png" },
+    { id: 0, src: "./assets/img/Orange.png" },
+    { id: 1, src: "./assets/img/karotten.png" },
+    { id: 2, src: "./assets/img/Eier.png" },
   ];
-  const correctIndices = [0, 1, 2, 3];
-  const audioSrc = "assets/audio/question-audio.mp3";
+  const correctIndices = [1, 2, 0];
+  const audioSrc = "assets/audio/3. Vitamine in Lebensmitteln erklärt.mp3";
   const tip = "Denke an die Regeln der Mülltrennung";
   const skipLink = "/verkehr1";
   const nextQuestionLink = "/verkehr1";

@@ -10,7 +10,7 @@ const Navbar = () => {
     {
       link: "/nahrung",
       label: "Nahrung",
-      icon: "numbers.png",
+      icon: "Banane.png",
     },
     {
       link: "/verkehr",
@@ -25,7 +25,7 @@ const Navbar = () => {
     {
       link: "/allgemein",
       label: "Allgemein",
-      icon: "trash.png",
+      icon: "numbers.png",
     },
   ];
 

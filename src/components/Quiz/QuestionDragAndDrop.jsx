@@ -138,7 +138,7 @@ const QuestionDragAndDrop = ({
                       <img
                         src={answer.src}
                         alt={`answer-${i}`}
-                        className="answer-image"
+                        className="answer-image-drag"
                         draggable
                         onDragStart={() => handleDragStart(answer.id)}
                       />
