@@ -35,9 +35,9 @@
 
 .categories {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: none;
   justify-content: center;
-  gap: 2rem;
+  gap: 6rem;
   width: 100%;
   margin: auto;
 }
@@ -45,7 +45,8 @@
 .categories__item {
   display: flex;
   flex-direction: column;
-  width: 30rem;
+  width: 25dvw;
+  height: 45dvh;
   background: rgb(255, 228, 181);
   color: black;
   border-radius: 4rem;
