@@ -18,9 +18,9 @@ const Trash = () => {
           <Header />
           <Categories
             categories={[
-              { link: "/allgemein1", label: "Mülltrennung", icon: "trash.png" },
-              { link: "/allgemein2", label: "Einschlafen", icon: "Schlafzimmer 2.png" },
-              { link: "/allgemein3", label: "Jahreszeiten", icon: "Schlafzimmer 2.png" },
+              { link: "/allgemein1", label: "Mülltrennung", icon: "peoplerecycling.jpg" },
+              { link: "/allgemein2", label: "Einschlafen", icon: "sleep.jpg" },
+              { link: "/allgemein3", label: "Jahreszeiten", icon: "4-seasons.jpg" },
             ]}
           />
           <div>

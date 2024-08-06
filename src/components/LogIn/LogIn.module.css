@@ -4,43 +4,51 @@ body {
 .logIn__container {
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  height: 50vh;
+  width: 60vw;
+  height: 60vh;
   align-items: center;
   justify-content: center;
-  margin-top: 30vh;
+  margin-top: 20vh;
   border-radius: 1rem;
-  background-color: rgba(194, 108, 235, 0.5);
+  background-color: rgba(255, 251, 231, 0.9);
 }
 
-h1 {
-  color: beige;
+.logIn__img {
+  margin-top: -8rem;
+  width: 40dvw;
+  object-fit: contain;
 }
-
 .logIn__eingabeauforderung-h2 {
-  font-size: 4rem;
-  color: white;
-  justify-self: top;
+  font-size: 3rem;
+  color: rgb(0, 119, 53);
+  justify-self: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .logIn__eingabeauforderung-p {
-  font-size: 3rem;
-  color: white;
+  font-size: 2rem;
+  color: rgb(0, 119, 53);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .logIn__benutzername {
   background: rgb(255, 255, 255);
   border-radius: 1rem;
-  border-color: #ef7721;
+  border-color: rgb(190, 139, 94);
   font-size: 2rem;
   padding: 1rem;
-  margin: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  width: 30rem;
 }
 
 .logIn__submit {
-  background: #ef7721;
+  background: rgb(190, 139, 94);
   border-radius: 1rem;
-  border-color: #ef7721;
+  border-color: rgb(190, 139, 94);
   font-size: 2rem;
   padding: 1rem;
   margin: 1rem;

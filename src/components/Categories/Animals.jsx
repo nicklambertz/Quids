@@ -8,7 +8,7 @@ const Animals = () => {
   return (
     <>
       <PageWrapper background="url('./assets/img/background1.jpeg')">
-        <link
+      <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -18,9 +18,9 @@ const Animals = () => {
           <Header />
           <Categories
             categories={[
-              { link: "/tiere1", label: "Tier in der Wüste", icon: "lion.png" },
-              { link: "/tiere2", label: "Tier aus Asien", icon: "lion.png" },
-              { link: "/tiere3", label: "Einordnung Tiere", icon: "lion.png" },
+              { link: "/tiere1", label: "Tier in der Wüste", icon: "Afrika.png" },
+              { link: "/tiere2", label: "Tier aus Asien", icon: "asialandscape.jpg" },
+              { link: "/tiere3", label: "Einordnung Tiere", icon: "animalscat.jpg" },
             ]}
           />
           <div>

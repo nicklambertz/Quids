@@ -18,10 +18,12 @@ const LogIn = () => {
   };
 
   return (
-    <PageWrapper background="url('./assets/img/loginbackgr.jpg')">
+    <PageWrapper background="url('./assets/img/loginbackgr2.jpg')">
       <div className={styles["logIn__container"]}>
+      <img className={styles["logIn__img"]} src="./assets/img/childrenwaving2.png"/>
+
         <h2 className={styles["logIn__eingabeauforderung-h2"]}>
-          Hallo! schön, dass du hier bist!
+          Hallo! Schön, dass du hier bist!
         </h2>
         <p className={styles["logIn__eingabeauforderung-p"]}>
           Gib hier deinen Namen ein:

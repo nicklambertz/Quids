@@ -18,9 +18,9 @@ const Food = () => {
           <Header />
           <Categories
             categories={[
-              { link: "/nahrung1", label: "Frühstück", icon: "Apfel.png" },
-              { link: "/nahrung2", label: "Snacks", icon: "Erdbeer.png" },
-              { link: "/nahrung3", label: "Vitamine", icon: "Vitamin A.png" },
+              { link: "/nahrung1", label: "Frühstück", icon: "breakfast.jpg" },
+              { link: "/nahrung2", label: "Snacks", icon: "snacks.jpg" },
+              { link: "/nahrung3", label: "Vitamine", icon: "vitamins.jpg" },
             ]}
             background={'url("./assets/img/background1.jpeg")'}
           />
