@@ -21,10 +21,10 @@ const Traffic = () => {
               {
                 link: "/verkehr1",
                 label: "Fahrrad",
-                icon: "traffic-light.png",
+                icon: "bicycleride.jpg",
               },
-              { link: "/verkehr2", label: "Ampel", icon: "traffic-light.png" },
-              { link: "/verkehr3", label: "Verkehrsschilder", icon: "traffic-light.png" },
+              { link: "/verkehr2", label: "Ampel", icon: "citytrafficlights.jpg" },
+              { link: "/verkehr3", label: "Verkehrsschilder", icon: "trafficsign.jpg" },
             ]}
           />
           <div>

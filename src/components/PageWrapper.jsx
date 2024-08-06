@@ -7,7 +7,7 @@ const PageWrapper = ({ background, children }) => {
     document.body.style.backgroundImage = background;
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundPosition = "center ";
 
     // Bereinige den Stil beim Verlassen der Seite
     return () => {
