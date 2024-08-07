@@ -91,6 +91,7 @@ const QuestionSelect = ({
                 src={answer.imgSrc}
                 alt={answer.text}
                 className="answer-image"
+                style={{ width: answer.width }}
               />
               <span className="answer-text">{answer.text}</span>
             </div>

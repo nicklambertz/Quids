@@ -20,22 +20,23 @@
 
 .header__score {
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.2);
   display: flex;
-  width: 18rem;
-  height: 7rem;
+  width: 14vw;
+  height: 4vw;
   border-radius: 2rem;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
-  font-size: 2.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 2rem;
   font-weight: 700;
   gap: 1.5rem;
 }
 
 .header__score > img {
   object-fit: cover;
-  width: 5rem;
+  width: 4rem;
 }
 
 .logo {
@@ -54,15 +55,16 @@
 
 .header__profile {
   display: flex;
-  width: 18rem;
-  height: 7rem;
+  width: 14vw;
+  height: 4vw;
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.2);
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 .header__profile > img {
@@ -71,6 +73,6 @@
 }
 
 .header__profile > span {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }

@@ -11,11 +11,12 @@ const Settings = () => {
   const [avatarIndex, setAvatarIndex] = useState(0);
 
   const avatars = [
-    "./assets/img/avatar1.jpg",
-    "./assets/img/settings.png",
-    "./assets/img/trash.png",
-    "./assets/img/lion.png",
-    "./assets/img/star-filled.png",
+    "./assets/img/avatarCat.png",
+    "./assets/img/avatarChick.png",
+    "./assets/img/avatarDog.png",
+    "./assets/img/avatarGiraffe.png",
+    "./assets/img/avatarMouse.png",
+    "./assets/img/avatarPanda.png",
   ];
 
   useEffect(() => {
@@ -56,16 +57,16 @@ const Settings = () => {
     <PageWrapper background="url('./assets/img/background1.jpeg')">
       <div className="container">
         <Header />
+        <Link to="/">
+          <button className="revert-button-question">
+            <img
+              src="./assets/img/revert.png"
+              alt="Zurück"
+              className="revert-button img"
+            />
+          </button>
+        </Link>
         <div className="settings-page">
-          <Link to="/">
-            <button className="revert-button-question">
-              <img
-                src="./assets/img/revert.png"
-                alt="Zurück"
-                className="revert-button img"
-              />
-            </button>
-          </Link>
           <div className="settings-content">
             <h2 className="settings-title">Einstellungen</h2>
             <div className="avatar-section">

@@ -128,9 +128,13 @@ const QuestionDragAndDrop = ({
                 className="drop-box"
               >
                 <img
-                  src={dropBoxImage}
+                  src={dropBoxImage.imgSrc}
                   alt={`drop-box-${index}`}
                   className="drop-box-image"
+                  style={{
+                    width: dropBoxImage.width,
+                    backgroundColor: `${dropBoxImage.color}`,
+                  }}
                 />
                 <div className="answers-in-box">
                   {answers[index].map((answer, i) => (
@@ -141,6 +145,7 @@ const QuestionDragAndDrop = ({
                         className="answer-image-drag"
                         draggable
                         onDragStart={() => handleDragStart(answer.id)}
+                        style={{ width: answer.width }}
                       />
                       <button onClick={() => handleRemoveAnswer(index, i)}>
                         X
@@ -163,6 +168,7 @@ const QuestionDragAndDrop = ({
                   src={answerImage.src}
                   alt={`answer-option-${index}`}
                   className="answer-option-image"
+                  style={{ width: answerImage.width }}
                 />
               </div>
             ))}

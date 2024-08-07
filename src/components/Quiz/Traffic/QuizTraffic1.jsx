@@ -5,9 +5,24 @@ import PageWrapper from "../../PageWrapper";
 const QuizTraffic1 = () => {
   const question = "Was solltest du immer tragen, wenn du Fahrrad fährst?";
   const answers = [
-    { imgSrc: "./assets/img/Fahrradhelm.png", text: "Fahrradhelm", color: "#87CEFA" },
-    { imgSrc: "./assets/img/Zauberhut.png", text: "Zauberhut", color: "#FFA07A" },
-    { imgSrc: "./assets/img/Weihnachtsmütze.png", text: "Mütze", color: "#98FB98" },
+    {
+      imgSrc: "./assets/img/Fahrradhelm.png",
+      width: "px",
+      text: "Fahrradhelm",
+      color: "#87CEFA",
+    },
+    {
+      imgSrc: "./assets/img/Zauberhut.png",
+      width: "px",
+      text: "Zauberhut",
+      color: "#FFA07A",
+    },
+    {
+      imgSrc: "./assets/img/Weihnachtsmütze.png",
+      width: "px",
+      text: "Mütze",
+      color: "#98FB98",
+    },
   ];
   const correctAnswerIndex = 0;
   const audioSrc = "/assets/audio/4. Sicher unterwegs_ Fahrradhelm tragen!.mp3";
