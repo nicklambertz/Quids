@@ -12,7 +12,7 @@ const QuizAnimals2 = () => {
   ];
   const correctAnswerIndex = 3;
   const audioSrc = "/assets/audio/8. Asiatische Tiere entdecken.mp3";
-  const tip = "Der Vogel hat einen blauen Kopf";
+  const tip = "Das Tier ist dafür bekannt viel Bambus zu essen.";
   const skipLink = "/tiere3";
   const nextQuestionLink = "/tiere3";
   return (

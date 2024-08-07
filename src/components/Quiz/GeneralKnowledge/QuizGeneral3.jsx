@@ -18,7 +18,7 @@ const QuizGeneral3 = () => {
   ];
   const correctIndices = [3, 2, 1, 0];
   const audioSrc = "assets/audio/12. Die Jahreszeiten richtig einordnen.mp3";
-  const tip = "Es beginnt mit dem Frühling";
+  const tip = "Es beginnt mit dem Frühling!";
   const skipLink = "/";
   const nextQuestionLink = "/";
 

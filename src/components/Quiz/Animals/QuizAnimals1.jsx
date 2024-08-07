@@ -12,7 +12,7 @@ const QuizAnimals1 = () => {
   ];
   const correctAnswerIndex = 2;
   const audioSrc = "/assets/audio/7. Tiere der Wüste entdecken.mp3";
-  const tip = "Der Vogel hat einen blauen Kopf";
+  const tip = "Das Tier ist dafür bekannt andere anzuspucken.";
   const skipLink = "/tiere2";
   const nextQuestionLink = "/tiere2";
   return (

@@ -12,7 +12,7 @@ const QuizGeneral2 = () => {
   ];
   const correctAnswerIndex = 1;
   const audioSrc = "/assets/audio/11. Schlafrituale für bessere Nächte.mp3";
-  const tip = "Der Vogel hat einen blauen Kopf";
+  const tip = "Lesen ist immer gut!";
   const skipLink = "/allgemein3";
   const nextQuestionLink = "/allgemein3";
   return (

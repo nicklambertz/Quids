@@ -12,7 +12,7 @@ const QuizTraffic2 = () => {
   const interval = 1500;
   const correctImageIndex = 2; //Index beginnt bei 0
   const audioSrc = "/assets/audio/5. Sicher überqueren_ Ampelregeln.mp3";
-  const tip = "Du darfst gehen, wenn die Ampel grün ist";
+  const tip = "Du darfst gehen, wenn die Ampel grün ist!";
   const skipLink = "/verkehr3";
   const nextQuestionLink = "/verkehr3";
   return (
