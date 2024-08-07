@@ -21,7 +21,7 @@
 }
 
 .navbar__item:hover {
-  background: rgb(0, 148, 0);
+  background: rgb(255, 246, 219);
   padding-bottom: 3rem;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .navbar__item--active {
-  background: rgb(57, 205, 57);
+  background: rgb(125, 171, 143);
   padding: 1.5rem;
   border-radius: 1.5rem;
 }

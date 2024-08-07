@@ -6,13 +6,13 @@
 }
 
 .start-quiz-button {
-  width: 20rem;
-  height: 5rem;
+  width: 16dvw;
+  height: 7dvh;
   display: flex;
   align-items: center;
   background-color: rgb(23, 193, 255);
   color: white;
-  font-size: 2rem;
+  font-size: calc(3rem + (6rem - 3rem) * ((100vw - 1280px) / (1920-1280)));;
   font-weight: 500;
   padding: 0.5rem 2rem;
   border: none;
