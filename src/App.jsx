@@ -31,11 +31,11 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<LogIn />} />
           <Route path="login" element={<LogIn />} />
-          <Route path="/" element={<Home />} />
+
           <Route path="punkte" element={<PointOverview />} />
           <Route path="einstellungen" element={<Settings />} />
 
-          <Route path="nahrung" element={<Food />} />
+          <Route path="/" element={<Food />} />
           <Route path="nahrung1" element={<QuizFood1 />} />
           <Route path="nahrung2" element={<QuizFood2 />} />
           <Route path="nahrung3" element={<QuizFood3 />} />

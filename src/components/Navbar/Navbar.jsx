@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const links = [
     {
-      link: "/nahrung",
+      link: "/",
       label: "Nahrung",
       icon: "Banane.png",
     },

@@ -5,14 +5,22 @@ import PageWrapper from "../../PageWrapper";
 const QuizGeneral1 = () => {
   const question = "Trenne den Müll in die richtige Tonne!";
   const dropBoxImages = [
-    "./assets/img/Gelbe Tonne.png",
-    "./assets/img/Bio Tonne.png",
-    "./assets/img/Blaue Tonne.png",
+    {
+      imgSrc: "./assets/img/Gelbe Tonne.png",
+      width: "100px",
+      color: "#87CEFA",
+    },
+    { imgSrc: "./assets/img/Bio Tonne.png", width: "100px", color: "#FFA07A" },
+    {
+      imgSrc: "./assets/img/Blaue Tonne.png",
+      width: "100px",
+      color: "#98FB98",
+    },
   ];
   const answerImages = [
-    { id: 0, src: "./assets/img/Plastikflasche.png", },
-    { id: 1, src: "./assets/img/Zeitung.png" },
-    { id: 2, src: "./assets/img/Bananenschale.png" },
+    { id: 0, src: "./assets/img/Plastikflasche.png", width: "100px" },
+    { id: 1, src: "./assets/img/Zeitung.png", width: "px" },
+    { id: 2, src: "./assets/img/Bananenschale.png", width: "px" },
   ];
   const correctIndices = [0, 2, 1];
   const audioSrc = "assets/audio/10. Mülltrennung nach dem Zoo-Besuch.mp3";

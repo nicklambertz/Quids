@@ -5,12 +5,12 @@ import PageWrapper from "../../PageWrapper";
 const QuizAnimals3 = () => {
   const question = "Ordne die Tiere in die richtigen Lebensräume ein!";
   const dropBoxImages = [
-    "./assets/img/Afrika.png",
-    "./assets/img/Antarktis.png",
+    { imgSrc: "./assets/img/Afrika.png", width: "px", color: "#87CEFA" },
+    { imgSrc: "./assets/img/Antarktis.png", width: "px", color: "#FFA07A" },
   ];
   const answerImages = [
-    { id: 0, src: "./assets/img/pinguin.png" },
-    { id: 1, src: "./assets/img/Elefant.png" },
+    { id: 0, src: "./assets/img/pinguin.png", width: "100px" },
+    { id: 1, src: "./assets/img/Elefant.png", width: "px" },
   ];
   const correctIndices = [1, 0];
   const audioSrc = "assets/audio/9. Tiere und ihre Lebensräume entdecken.mp3";

@@ -4,11 +4,12 @@ import styles from "./header.module.css";
 
 const Header = () => {
   const avatars = [
-    "./assets/img/avatar1.jpg",
-    "./assets/img/settings.png",
-    "./assets/img/trash.png",
-    "./assets/img/lion.png",
-    "./assets/img/star-filled.png",
+    "./assets/img/avatarCat.png",
+    "./assets/img/avatarChick.png",
+    "./assets/img/avatarDog.png",
+    "./assets/img/avatarGiraffe.png",
+    "./assets/img/avatarMouse.png",
+    "./assets/img/avatarPanda.png",
   ];
 
   const [avatarSrc, setAvatarSrc] = useState(avatars[0]);
