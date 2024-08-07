@@ -17,7 +17,7 @@ const QuizFood3 = () => {
   ];
   const correctIndices = [1, 2, 0];
   const audioSrc = "assets/audio/3. Vitamine in Lebensmitteln erklärt.mp3";
-  const tip = "Denke an die Regeln der Mülltrennung";
+  const tip = "Denk daran, dass Karotten gut für die Augen sind und viel Vitamin A haben, Eier ein tolles Frühstück sind und viel Vitamin B enthalten, und Orangen dich gesund halten, weil sie voller Vitamin C stecken.";
   const skipLink = "/verkehr1";
   const nextQuestionLink = "/verkehr1";
 

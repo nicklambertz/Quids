@@ -12,7 +12,7 @@ const QuizTraffic3 = () => {
   ];
   const correctAnswersIndices = [0, 3];
   const audioSrc = "/assets/audio/6. Acht auf Verkehrsschilder!.mp3";
-  const tip = "Der Vogel hat einen blauen Kopf";
+  const tip = "Meistens muss man genau gucken wenn die Schilder Rot und Weiß sind!";
   const skipLink = "/tiere1";
   const nextQuestionLink = "/tiere1";
 

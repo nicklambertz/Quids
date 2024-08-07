@@ -11,7 +11,7 @@ const QuizTraffic1 = () => {
   ];
   const correctAnswerIndex = 0;
   const audioSrc = "/assets/audio/4. Sicher unterwegs_ Fahrradhelm tragen!.mp3";
-  const tip = "Der Vogel hat einen blauen Kopf";
+  const tip = "Was bietet dir Sicherheit?";
   const skipLink = "/verkehr2";
   const nextQuestionLink = "/verkehr2";
   return (

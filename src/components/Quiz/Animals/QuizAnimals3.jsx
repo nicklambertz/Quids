@@ -14,7 +14,7 @@ const QuizAnimals3 = () => {
   ];
   const correctIndices = [1, 0];
   const audioSrc = "assets/audio/9. Tiere und ihre Lebensräume entdecken.mp3";
-  const tip = "Denke an die Regeln der Mülltrennung";
+  const tip = "Versuche es noch ein Mal!";
   const skipLink = "/allgemein1";
   const nextQuestionLink = "/allgemein1";
 
