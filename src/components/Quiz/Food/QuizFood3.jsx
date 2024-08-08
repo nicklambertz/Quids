@@ -11,12 +11,13 @@ const QuizFood3 = () => {
   ];
   const answerImages = [
     { id: 0, src: "./assets/img/Orange.png", width: "px" },
-    { id: 1, src: "./assets/img/karotten.png", width: "130px" },
-    { id: 2, src: "./assets/img/Eier.png", width: "100px" },
+    { id: 1, src: "./assets/img/karotten.png", width: "px" },
+    { id: 2, src: "./assets/img/Eier.png", width: "px" },
   ];
   const correctIndices = [1, 2, 0];
   const audioSrc = "assets/audio/3. Vitamine in Lebensmitteln erklärt.mp3";
-  const tip = "Denk daran, dass Karotten gut für die Augen sind und viel Vitamin A haben, Eier ein tolles Frühstück sind und viel Vitamin B enthalten, und Orangen dich gesund halten, weil sie voller Vitamin C stecken.";
+  const tip =
+    "Gemüse hat Vitamin A, tierische Produkte Vitamin B und Obst Vitamin C";
   const skipLink = "/verkehr1";
   const nextQuestionLink = "/verkehr1";
 

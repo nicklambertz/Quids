@@ -7,18 +7,18 @@ const QuizGeneral1 = () => {
   const dropBoxImages = [
     {
       imgSrc: "./assets/img/Gelbe Tonne.png",
-      width: "100px",
+      width: "150px",
       color: "#87CEFA",
     },
-    { imgSrc: "./assets/img/Bio Tonne.png", width: "100px", color: "#FFA07A" },
+    { imgSrc: "./assets/img/Bio Tonne.png", width: "150px", color: "#FFA07A" },
     {
       imgSrc: "./assets/img/Blaue Tonne.png",
-      width: "100px",
+      width: "150px",
       color: "#98FB98",
     },
   ];
   const answerImages = [
-    { id: 0, src: "./assets/img/Plastikflasche.png", width: "100px" },
+    { id: 0, src: "./assets/img/Plastikflasche.png", width: "120px" },
     { id: 1, src: "./assets/img/Zeitung.png", width: "px" },
     { id: 2, src: "./assets/img/Bananenschale.png", width: "px" },
   ];

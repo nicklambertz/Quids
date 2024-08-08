@@ -179,15 +179,7 @@ const QuestionDragAndDrop = ({
             <img src="assets/img/play.png" alt="Check question" />
           </button>
         </div>
-        <div
-          className="skip-button-container"
-          style={{
-            position: "fixed",
-            top: "53%",
-            right: "180px",
-            transform: "translateY(-50%)",
-          }}
-        >
+        <div className="skip-button-container-select">
           <Link to={skipLink}>
             <button className="skip-button">
               <img
